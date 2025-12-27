@@ -1,0 +1,464 @@
+[
+ {
+  "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/top.v",
+  "InstLine" : 5,
+  "InstName" : "top",
+  "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/top.v",
+  "ModuleLine" : 5,
+  "ModuleName" : "top",
+  "SubInsts" : [
+   {
+    "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/top.v",
+    "InstLine" : 37,
+    "InstName" : "I2C_PLL_120Mhz_30Mhz",
+    "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/gowin_rpll/I2C_PLL_120Mhz_30Mhz.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "I2C_PLL_120Mhz_30Mhz"
+   },
+   {
+    "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/top.v",
+    "InstLine" : 57,
+    "InstName" : "u_i2c_top",
+    "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/i2c/i2c_top.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "i2c_top",
+    "SubInsts" : [
+     {
+      "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/i2c/i2c_top.v",
+      "InstLine" : 57,
+      "InstName" : "u_filter",
+      "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/i2c/i2c_input_filter.v",
+      "ModuleLine" : 12,
+      "ModuleName" : "i2c_input_filter"
+     },
+     {
+      "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/i2c/i2c_top.v",
+      "InstLine" : 71,
+      "InstName" : "u_i2c_addr_cfg",
+      "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/i2c/i2c_address_config.v",
+      "ModuleLine" : 16,
+      "ModuleName" : "i2c_address_config"
+     },
+     {
+      "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/i2c/i2c_top.v",
+      "InstLine" : 81,
+      "InstName" : "u_start_stop_detect",
+      "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/i2c/i2c_start_stop_detect.v",
+      "ModuleLine" : 11,
+      "ModuleName" : "i2c_start_stop_detect"
+     },
+     {
+      "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/i2c/i2c_top.v",
+      "InstLine" : 94,
+      "InstName" : "u_slave",
+      "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/i2c/i2c_slave_interface.v",
+      "ModuleLine" : 11,
+      "ModuleName" : "i2c_slave_interface"
+     },
+     {
+      "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/i2c/i2c_top.v",
+      "InstLine" : 123,
+      "InstName" : "u_bridge",
+      "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/i2c/i2c_frame_bridge.v",
+      "ModuleLine" : 11,
+      "ModuleName" : "i2c_frame_bridge"
+     }
+    ]
+   },
+   {
+    "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/top.v",
+    "InstLine" : 73,
+    "InstName" : "pwm_top_dut",
+    "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_top.v",
+    "ModuleLine" : 8,
+    "ModuleName" : "pwm_top",
+    "SubInsts" : [
+     {
+      "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_top.v",
+      "InstLine" : 120,
+      "InstName" : "u_pwm_register",
+      "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_register.v",
+      "ModuleLine" : 4,
+      "ModuleName" : "pwm_register"
+     },
+     {
+      "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_top.v",
+      "InstLine" : 185,
+      "InstName" : "u_pwm_core_1",
+      "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_core.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "pwm_core",
+      "SubInsts" : [
+       {
+        "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_core.v",
+        "InstLine" : 29,
+        "InstName" : "u_pwm_prescaler",
+        "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_prescaler.v",
+        "ModuleLine" : 8,
+        "ModuleName" : "pwm_prescaler"
+       },
+       {
+        "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_core.v",
+        "InstLine" : 40,
+        "InstName" : "u_pwm_counter",
+        "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_counter.v",
+        "ModuleLine" : 9,
+        "ModuleName" : "pwm_counter"
+       },
+       {
+        "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_core.v",
+        "InstLine" : 55,
+        "InstName" : "u_pwm_comparator_ch1",
+        "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_comparator.v",
+        "ModuleLine" : 11,
+        "ModuleName" : "pwm_comparator"
+       },
+       {
+        "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_core.v",
+        "InstLine" : 71,
+        "InstName" : "u_pwm_oc_ch1",
+        "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc.v",
+        "ModuleLine" : 7,
+        "ModuleName" : "pwm_oc",
+        "SubInsts" : [
+         {
+          "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc.v",
+          "InstLine" : 51,
+          "InstName" : "u_oc_ref",
+          "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc_refgen.v",
+          "ModuleLine" : 12,
+          "ModuleName" : "pwm_oc_refgen"
+         },
+         {
+          "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc.v",
+          "InstLine" : 73,
+          "InstName" : "u_deadtime",
+          "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc_deadtime.v",
+          "ModuleLine" : 11,
+          "ModuleName" : "pwm_oc_deadtime"
+         }
+        ]
+       },
+       {
+        "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_core.v",
+        "InstLine" : 98,
+        "InstName" : "u_pwm_comparator_ch2",
+        "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_comparator.v",
+        "ModuleLine" : 11,
+        "ModuleName" : "pwm_comparator"
+       },
+       {
+        "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_core.v",
+        "InstLine" : 114,
+        "InstName" : "u_pwm_oc_ch2",
+        "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc.v",
+        "ModuleLine" : 7,
+        "ModuleName" : "pwm_oc",
+        "SubInsts" : [
+         {
+          "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc.v",
+          "InstLine" : 51,
+          "InstName" : "u_oc_ref",
+          "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc_refgen.v",
+          "ModuleLine" : 12,
+          "ModuleName" : "pwm_oc_refgen"
+         },
+         {
+          "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc.v",
+          "InstLine" : 73,
+          "InstName" : "u_deadtime",
+          "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc_deadtime.v",
+          "ModuleLine" : 11,
+          "ModuleName" : "pwm_oc_deadtime"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_top.v",
+      "InstLine" : 210,
+      "InstName" : "u_pwm_core_2",
+      "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_core.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "pwm_core",
+      "SubInsts" : [
+       {
+        "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_core.v",
+        "InstLine" : 29,
+        "InstName" : "u_pwm_prescaler",
+        "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_prescaler.v",
+        "ModuleLine" : 8,
+        "ModuleName" : "pwm_prescaler"
+       },
+       {
+        "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_core.v",
+        "InstLine" : 40,
+        "InstName" : "u_pwm_counter",
+        "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_counter.v",
+        "ModuleLine" : 9,
+        "ModuleName" : "pwm_counter"
+       },
+       {
+        "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_core.v",
+        "InstLine" : 55,
+        "InstName" : "u_pwm_comparator_ch1",
+        "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_comparator.v",
+        "ModuleLine" : 11,
+        "ModuleName" : "pwm_comparator"
+       },
+       {
+        "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_core.v",
+        "InstLine" : 71,
+        "InstName" : "u_pwm_oc_ch1",
+        "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc.v",
+        "ModuleLine" : 7,
+        "ModuleName" : "pwm_oc",
+        "SubInsts" : [
+         {
+          "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc.v",
+          "InstLine" : 51,
+          "InstName" : "u_oc_ref",
+          "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc_refgen.v",
+          "ModuleLine" : 12,
+          "ModuleName" : "pwm_oc_refgen"
+         },
+         {
+          "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc.v",
+          "InstLine" : 73,
+          "InstName" : "u_deadtime",
+          "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc_deadtime.v",
+          "ModuleLine" : 11,
+          "ModuleName" : "pwm_oc_deadtime"
+         }
+        ]
+       },
+       {
+        "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_core.v",
+        "InstLine" : 98,
+        "InstName" : "u_pwm_comparator_ch2",
+        "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_comparator.v",
+        "ModuleLine" : 11,
+        "ModuleName" : "pwm_comparator"
+       },
+       {
+        "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_core.v",
+        "InstLine" : 114,
+        "InstName" : "u_pwm_oc_ch2",
+        "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc.v",
+        "ModuleLine" : 7,
+        "ModuleName" : "pwm_oc",
+        "SubInsts" : [
+         {
+          "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc.v",
+          "InstLine" : 51,
+          "InstName" : "u_oc_ref",
+          "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc_refgen.v",
+          "ModuleLine" : 12,
+          "ModuleName" : "pwm_oc_refgen"
+         },
+         {
+          "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc.v",
+          "InstLine" : 73,
+          "InstName" : "u_deadtime",
+          "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc_deadtime.v",
+          "ModuleLine" : 11,
+          "ModuleName" : "pwm_oc_deadtime"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_top.v",
+      "InstLine" : 235,
+      "InstName" : "u_pwm_core_3",
+      "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_core.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "pwm_core",
+      "SubInsts" : [
+       {
+        "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_core.v",
+        "InstLine" : 29,
+        "InstName" : "u_pwm_prescaler",
+        "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_prescaler.v",
+        "ModuleLine" : 8,
+        "ModuleName" : "pwm_prescaler"
+       },
+       {
+        "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_core.v",
+        "InstLine" : 40,
+        "InstName" : "u_pwm_counter",
+        "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_counter.v",
+        "ModuleLine" : 9,
+        "ModuleName" : "pwm_counter"
+       },
+       {
+        "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_core.v",
+        "InstLine" : 55,
+        "InstName" : "u_pwm_comparator_ch1",
+        "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_comparator.v",
+        "ModuleLine" : 11,
+        "ModuleName" : "pwm_comparator"
+       },
+       {
+        "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_core.v",
+        "InstLine" : 71,
+        "InstName" : "u_pwm_oc_ch1",
+        "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc.v",
+        "ModuleLine" : 7,
+        "ModuleName" : "pwm_oc",
+        "SubInsts" : [
+         {
+          "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc.v",
+          "InstLine" : 51,
+          "InstName" : "u_oc_ref",
+          "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc_refgen.v",
+          "ModuleLine" : 12,
+          "ModuleName" : "pwm_oc_refgen"
+         },
+         {
+          "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc.v",
+          "InstLine" : 73,
+          "InstName" : "u_deadtime",
+          "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc_deadtime.v",
+          "ModuleLine" : 11,
+          "ModuleName" : "pwm_oc_deadtime"
+         }
+        ]
+       },
+       {
+        "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_core.v",
+        "InstLine" : 98,
+        "InstName" : "u_pwm_comparator_ch2",
+        "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_comparator.v",
+        "ModuleLine" : 11,
+        "ModuleName" : "pwm_comparator"
+       },
+       {
+        "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_core.v",
+        "InstLine" : 114,
+        "InstName" : "u_pwm_oc_ch2",
+        "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc.v",
+        "ModuleLine" : 7,
+        "ModuleName" : "pwm_oc",
+        "SubInsts" : [
+         {
+          "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc.v",
+          "InstLine" : 51,
+          "InstName" : "u_oc_ref",
+          "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc_refgen.v",
+          "ModuleLine" : 12,
+          "ModuleName" : "pwm_oc_refgen"
+         },
+         {
+          "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc.v",
+          "InstLine" : 73,
+          "InstName" : "u_deadtime",
+          "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc_deadtime.v",
+          "ModuleLine" : 11,
+          "ModuleName" : "pwm_oc_deadtime"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_top.v",
+      "InstLine" : 260,
+      "InstName" : "u_pwm_core_4",
+      "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_core.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "pwm_core",
+      "SubInsts" : [
+       {
+        "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_core.v",
+        "InstLine" : 29,
+        "InstName" : "u_pwm_prescaler",
+        "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_prescaler.v",
+        "ModuleLine" : 8,
+        "ModuleName" : "pwm_prescaler"
+       },
+       {
+        "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_core.v",
+        "InstLine" : 40,
+        "InstName" : "u_pwm_counter",
+        "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_counter.v",
+        "ModuleLine" : 9,
+        "ModuleName" : "pwm_counter"
+       },
+       {
+        "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_core.v",
+        "InstLine" : 55,
+        "InstName" : "u_pwm_comparator_ch1",
+        "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_comparator.v",
+        "ModuleLine" : 11,
+        "ModuleName" : "pwm_comparator"
+       },
+       {
+        "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_core.v",
+        "InstLine" : 71,
+        "InstName" : "u_pwm_oc_ch1",
+        "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc.v",
+        "ModuleLine" : 7,
+        "ModuleName" : "pwm_oc",
+        "SubInsts" : [
+         {
+          "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc.v",
+          "InstLine" : 51,
+          "InstName" : "u_oc_ref",
+          "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc_refgen.v",
+          "ModuleLine" : 12,
+          "ModuleName" : "pwm_oc_refgen"
+         },
+         {
+          "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc.v",
+          "InstLine" : 73,
+          "InstName" : "u_deadtime",
+          "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc_deadtime.v",
+          "ModuleLine" : 11,
+          "ModuleName" : "pwm_oc_deadtime"
+         }
+        ]
+       },
+       {
+        "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_core.v",
+        "InstLine" : 98,
+        "InstName" : "u_pwm_comparator_ch2",
+        "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_comparator.v",
+        "ModuleLine" : 11,
+        "ModuleName" : "pwm_comparator"
+       },
+       {
+        "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_core.v",
+        "InstLine" : 114,
+        "InstName" : "u_pwm_oc_ch2",
+        "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc.v",
+        "ModuleLine" : 7,
+        "ModuleName" : "pwm_oc",
+        "SubInsts" : [
+         {
+          "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc.v",
+          "InstLine" : 51,
+          "InstName" : "u_oc_ref",
+          "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc_refgen.v",
+          "ModuleLine" : 12,
+          "ModuleName" : "pwm_oc_refgen"
+         },
+         {
+          "InstFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc.v",
+          "InstLine" : 73,
+          "InstName" : "u_deadtime",
+          "ModuleFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc_deadtime.v",
+          "ModuleLine" : 11,
+          "ModuleName" : "pwm_oc_deadtime"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

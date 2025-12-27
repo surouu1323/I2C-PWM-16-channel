@@ -1,0 +1,2164 @@
+$date
+	Wed Nov 26 09:55:28 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module tb $end
+$var wire 16 ! rdata [15:0] $end
+$var wire 1 " pwm_ch4_b_o $end
+$var wire 1 # pwm_ch4_a_o $end
+$var wire 1 $ pwm_ch3_b_o $end
+$var wire 1 % pwm_ch3_a_o $end
+$var wire 1 & pwm_ch2_b_o $end
+$var wire 1 ' pwm_ch2_a_o $end
+$var wire 1 ( pwm_ch1_b_o $end
+$var wire 1 ) pwm_ch1_a_o $end
+$var parameter 32 * WIDTH $end
+$var reg 8 + addr [7:0] $end
+$var reg 1 , clk $end
+$var reg 1 - rd_en $end
+$var reg 1 . rst_n $end
+$var reg 16 / wdata [15:0] $end
+$var reg 1 0 wr_en $end
+$scope module uut $end
+$var wire 8 1 addr_i [7:0] $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 - rd_en_i $end
+$var wire 1 . rst_n_i $end
+$var wire 16 2 wdata_i [15:0] $end
+$var wire 1 0 wr_en_i $end
+$var wire 16 3 rdata_o [15:0] $end
+$var wire 1 4 pwm_ch8_b_o $end
+$var wire 1 5 pwm_ch8_a_o $end
+$var wire 1 6 pwm_ch7_b_o $end
+$var wire 1 7 pwm_ch7_a_o $end
+$var wire 1 8 pwm_ch6_b_o $end
+$var wire 1 9 pwm_ch6_a_o $end
+$var wire 1 : pwm_ch5_b_o $end
+$var wire 1 ; pwm_ch5_a_o $end
+$var wire 1 " pwm_ch4_b_o $end
+$var wire 1 # pwm_ch4_a_o $end
+$var wire 1 $ pwm_ch3_b_o $end
+$var wire 1 % pwm_ch3_a_o $end
+$var wire 1 & pwm_ch2_b_o $end
+$var wire 1 ' pwm_ch2_a_o $end
+$var wire 1 ( pwm_ch1_b_o $end
+$var wire 1 ) pwm_ch1_a_o $end
+$var wire 16 < psc_preload_4_w [15:0] $end
+$var wire 16 = psc_preload_3_w [15:0] $end
+$var wire 16 > psc_preload_2_w [15:0] $end
+$var wire 16 ? psc_preload_1_w [15:0] $end
+$var wire 8 @ dtg_ch8_w [7:0] $end
+$var wire 8 A dtg_ch7_w [7:0] $end
+$var wire 8 B dtg_ch6_w [7:0] $end
+$var wire 8 C dtg_ch5_w [7:0] $end
+$var wire 8 D dtg_ch4_w [7:0] $end
+$var wire 8 E dtg_ch3_w [7:0] $end
+$var wire 8 F dtg_ch2_w [7:0] $end
+$var wire 8 G dtg_ch1_w [7:0] $end
+$var wire 1 H cnt_en_4_w $end
+$var wire 1 I cnt_en_3_w $end
+$var wire 1 J cnt_en_2_w $end
+$var wire 1 K cnt_en_1_w $end
+$var wire 16 L cmp_ch8_start_w [15:0] $end
+$var wire 16 M cmp_ch8_end_w [15:0] $end
+$var wire 16 N cmp_ch7_start_w [15:0] $end
+$var wire 16 O cmp_ch7_end_w [15:0] $end
+$var wire 16 P cmp_ch6_start_w [15:0] $end
+$var wire 16 Q cmp_ch6_end_w [15:0] $end
+$var wire 16 R cmp_ch5_start_w [15:0] $end
+$var wire 16 S cmp_ch5_end_w [15:0] $end
+$var wire 16 T cmp_ch4_start_w [15:0] $end
+$var wire 16 U cmp_ch4_end_w [15:0] $end
+$var wire 16 V cmp_ch3_start_w [15:0] $end
+$var wire 16 W cmp_ch3_end_w [15:0] $end
+$var wire 16 X cmp_ch2_start_w [15:0] $end
+$var wire 16 Y cmp_ch2_end_w [15:0] $end
+$var wire 16 Z cmp_ch1_start_w [15:0] $end
+$var wire 16 [ cmp_ch1_end_w [15:0] $end
+$var wire 16 \ cfg_reg_ch8 [15:0] $end
+$var wire 16 ] cfg_reg_ch7 [15:0] $end
+$var wire 16 ^ cfg_reg_ch6 [15:0] $end
+$var wire 16 _ cfg_reg_ch5 [15:0] $end
+$var wire 16 ` cfg_reg_ch4 [15:0] $end
+$var wire 16 a cfg_reg_ch3 [15:0] $end
+$var wire 16 b cfg_reg_ch2 [15:0] $end
+$var wire 16 c cfg_reg_ch1 [15:0] $end
+$var wire 16 d arr_preload_4_w [15:0] $end
+$var wire 16 e arr_preload_3_w [15:0] $end
+$var wire 16 f arr_preload_2_w [15:0] $end
+$var wire 16 g arr_preload_1_w [15:0] $end
+$var parameter 32 h WIDTH $end
+$scope module u_pwm_core_1 $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 ) pwm_ch1_a_o $end
+$var wire 1 ( pwm_ch1_b_o $end
+$var wire 1 ' pwm_ch2_a_o $end
+$var wire 1 & pwm_ch2_b_o $end
+$var wire 1 . rst_n_i $end
+$var wire 16 i psc_preload_w [15:0] $end
+$var wire 1 j overflow_w $end
+$var wire 1 k oc_main_ch2_o $end
+$var wire 1 l oc_main_ch1_o $end
+$var wire 1 m oc_comp_ch2_o $end
+$var wire 1 n oc_comp_ch1_o $end
+$var wire 8 o dtg_ch2_w [7:0] $end
+$var wire 8 p dtg_ch1_w [7:0] $end
+$var wire 16 q cnt_val_w [15:0] $end
+$var wire 1 r cnt_gt_cmp_ch2_start_w $end
+$var wire 1 s cnt_gt_cmp_ch2_end_w $end
+$var wire 1 t cnt_gt_cmp_ch1_start_w $end
+$var wire 1 u cnt_gt_cmp_ch1_end_w $end
+$var wire 1 v cnt_eq_cmp_ch2_start_w $end
+$var wire 1 w cnt_eq_cmp_ch2_end_w $end
+$var wire 1 x cnt_eq_cmp_ch1_start_w $end
+$var wire 1 y cnt_eq_cmp_ch1_end_w $end
+$var wire 1 K cnt_en_w $end
+$var wire 16 z cmp_ch2_start_w [15:0] $end
+$var wire 16 { cmp_ch2_end_w [15:0] $end
+$var wire 16 | cmp_ch1_start_w [15:0] $end
+$var wire 16 } cmp_ch1_end_w [15:0] $end
+$var wire 1 ~ ck_cnt_w $end
+$var wire 16 !" cfg_reg_ch2 [15:0] $end
+$var wire 16 "" cfg_reg_ch1 [15:0] $end
+$var wire 16 #" arr_preload_w [15:0] $end
+$var parameter 32 $" WIDTH $end
+$scope module u_pwm_comparator_ch1 $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 . rst_n_i $end
+$var wire 1 j update_event_i $end
+$var wire 16 %" cnt_i [15:0] $end
+$var wire 16 &" cmp_start_i [15:0] $end
+$var wire 16 '" cmp_end_i [15:0] $end
+$var parameter 32 (" WIDTH $end
+$var reg 16 )" cmp_end_reg [15:0] $end
+$var reg 16 *" cmp_start_reg [15:0] $end
+$var reg 1 y cnt_eq_cmp_end_o $end
+$var reg 1 x cnt_eq_cmp_start_o $end
+$var reg 1 u cnt_gt_cmp_end_o $end
+$var reg 1 t cnt_gt_cmp_start_o $end
+$upscope $end
+$scope module u_pwm_comparator_ch2 $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 . rst_n_i $end
+$var wire 1 j update_event_i $end
+$var wire 16 +" cnt_i [15:0] $end
+$var wire 16 ," cmp_start_i [15:0] $end
+$var wire 16 -" cmp_end_i [15:0] $end
+$var parameter 32 ." WIDTH $end
+$var reg 16 /" cmp_end_reg [15:0] $end
+$var reg 16 0" cmp_start_reg [15:0] $end
+$var reg 1 w cnt_eq_cmp_end_o $end
+$var reg 1 v cnt_eq_cmp_start_o $end
+$var reg 1 s cnt_gt_cmp_end_o $end
+$var reg 1 r cnt_gt_cmp_start_o $end
+$upscope $end
+$scope module u_pwm_counter $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 . rst_n_i $end
+$var wire 1 K cnt_en_i $end
+$var wire 1 ~ ck_cnt_i $end
+$var wire 16 1" arr_preload_i [15:0] $end
+$var parameter 32 2" CNT_WIDTH $end
+$var reg 16 3" arr_shadow_reg [15:0] $end
+$var reg 16 4" cnt_o [15:0] $end
+$var reg 1 j overflow_o $end
+$upscope $end
+$scope module u_pwm_oc_ch1 $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 y cmp_end_eq_i $end
+$var wire 1 u cmp_end_gt_i $end
+$var wire 1 x cmp_start_eq_i $end
+$var wire 1 t cmp_start_gt_i $end
+$var wire 1 5" dtg_src_sel_i $end
+$var wire 1 6" oc_comp_pol_i $end
+$var wire 2 7" oc_comp_sel_i [1:0] $end
+$var wire 1 8" oc_main_pol_i $end
+$var wire 2 9" oc_main_sel_i [1:0] $end
+$var wire 1 :" oc_mode_i $end
+$var wire 1 . rst_n_i $end
+$var wire 1 j update_event_i $end
+$var wire 1 ;" oc_ref_b_int $end
+$var wire 1 <" oc_ref_a_int $end
+$var wire 1 l oc_main_o $end
+$var wire 1 =" oc_main_dt_int $end
+$var wire 1 n oc_comp_o $end
+$var wire 1 >" oc_comp_dt_int $end
+$var wire 8 ?" dtg_preload_i [7:0] $end
+$var wire 1 @" dtg_input_int $end
+$var parameter 32 A" DEADTIME_WIDTH $end
+$var reg 1 B" oc_comp_mux_int $end
+$var reg 1 C" oc_main_mux_int $end
+$scope module u_deadtime $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 =" pwm_high_o $end
+$var wire 1 @" pwm_in_i $end
+$var wire 1 >" pwm_low_o $end
+$var wire 1 . rst_n_i $end
+$var wire 1 j update_event_i $end
+$var wire 8 D" dtg_preload_i [7:0] $end
+$var parameter 32 E" WIDTH $end
+$var reg 8 F" dt_counter_r [7:0] $end
+$var reg 8 G" dtg_shadow_r [7:0] $end
+$var reg 1 H" pwm_in_dly_r $end
+$upscope $end
+$scope module u_oc_ref $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 y cmp_end_eq_i $end
+$var wire 1 u cmp_end_gt_i $end
+$var wire 1 x cmp_start_eq_i $end
+$var wire 1 t cmp_start_gt_i $end
+$var wire 1 :" mode_i $end
+$var wire 1 . rst_n_i $end
+$var reg 1 <" oc_a_ref_o $end
+$var reg 1 ;" oc_b_ref_o $end
+$upscope $end
+$upscope $end
+$scope module u_pwm_oc_ch2 $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 w cmp_end_eq_i $end
+$var wire 1 s cmp_end_gt_i $end
+$var wire 1 v cmp_start_eq_i $end
+$var wire 1 r cmp_start_gt_i $end
+$var wire 1 I" dtg_src_sel_i $end
+$var wire 1 J" oc_comp_pol_i $end
+$var wire 2 K" oc_comp_sel_i [1:0] $end
+$var wire 1 L" oc_main_pol_i $end
+$var wire 2 M" oc_main_sel_i [1:0] $end
+$var wire 1 N" oc_mode_i $end
+$var wire 1 . rst_n_i $end
+$var wire 1 j update_event_i $end
+$var wire 1 O" oc_ref_b_int $end
+$var wire 1 P" oc_ref_a_int $end
+$var wire 1 k oc_main_o $end
+$var wire 1 Q" oc_main_dt_int $end
+$var wire 1 m oc_comp_o $end
+$var wire 1 R" oc_comp_dt_int $end
+$var wire 8 S" dtg_preload_i [7:0] $end
+$var wire 1 T" dtg_input_int $end
+$var parameter 32 U" DEADTIME_WIDTH $end
+$var reg 1 V" oc_comp_mux_int $end
+$var reg 1 W" oc_main_mux_int $end
+$scope module u_deadtime $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 Q" pwm_high_o $end
+$var wire 1 T" pwm_in_i $end
+$var wire 1 R" pwm_low_o $end
+$var wire 1 . rst_n_i $end
+$var wire 1 j update_event_i $end
+$var wire 8 X" dtg_preload_i [7:0] $end
+$var parameter 32 Y" WIDTH $end
+$var reg 8 Z" dt_counter_r [7:0] $end
+$var reg 8 [" dtg_shadow_r [7:0] $end
+$var reg 1 \" pwm_in_dly_r $end
+$upscope $end
+$scope module u_oc_ref $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 w cmp_end_eq_i $end
+$var wire 1 s cmp_end_gt_i $end
+$var wire 1 v cmp_start_eq_i $end
+$var wire 1 r cmp_start_gt_i $end
+$var wire 1 N" mode_i $end
+$var wire 1 . rst_n_i $end
+$var reg 1 P" oc_a_ref_o $end
+$var reg 1 O" oc_b_ref_o $end
+$upscope $end
+$upscope $end
+$scope module u_pwm_prescaler $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 . rst_n_i $end
+$var wire 16 ]" psc_preload_i [15:0] $end
+$var wire 1 K cen_i $end
+$var parameter 32 ^" PSC_WIDTH $end
+$var reg 1 ~ ck_cnt_o $end
+$var reg 16 _" psc_counter_reg [15:0] $end
+$var reg 16 `" psc_shadow_reg [15:0] $end
+$var reg 1 a" uev_o $end
+$upscope $end
+$upscope $end
+$scope module u_pwm_core_2 $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 % pwm_ch1_a_o $end
+$var wire 1 $ pwm_ch1_b_o $end
+$var wire 1 # pwm_ch2_a_o $end
+$var wire 1 " pwm_ch2_b_o $end
+$var wire 1 . rst_n_i $end
+$var wire 16 b" psc_preload_w [15:0] $end
+$var wire 1 c" overflow_w $end
+$var wire 1 d" oc_main_ch2_o $end
+$var wire 1 e" oc_main_ch1_o $end
+$var wire 1 f" oc_comp_ch2_o $end
+$var wire 1 g" oc_comp_ch1_o $end
+$var wire 8 h" dtg_ch2_w [7:0] $end
+$var wire 8 i" dtg_ch1_w [7:0] $end
+$var wire 16 j" cnt_val_w [15:0] $end
+$var wire 1 k" cnt_gt_cmp_ch2_start_w $end
+$var wire 1 l" cnt_gt_cmp_ch2_end_w $end
+$var wire 1 m" cnt_gt_cmp_ch1_start_w $end
+$var wire 1 n" cnt_gt_cmp_ch1_end_w $end
+$var wire 1 o" cnt_eq_cmp_ch2_start_w $end
+$var wire 1 p" cnt_eq_cmp_ch2_end_w $end
+$var wire 1 q" cnt_eq_cmp_ch1_start_w $end
+$var wire 1 r" cnt_eq_cmp_ch1_end_w $end
+$var wire 1 K cnt_en_w $end
+$var wire 16 s" cmp_ch2_start_w [15:0] $end
+$var wire 16 t" cmp_ch2_end_w [15:0] $end
+$var wire 16 u" cmp_ch1_start_w [15:0] $end
+$var wire 16 v" cmp_ch1_end_w [15:0] $end
+$var wire 1 w" ck_cnt_w $end
+$var wire 16 x" cfg_reg_ch2 [15:0] $end
+$var wire 16 y" cfg_reg_ch1 [15:0] $end
+$var wire 16 z" arr_preload_w [15:0] $end
+$var parameter 32 {" WIDTH $end
+$scope module u_pwm_comparator_ch1 $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 . rst_n_i $end
+$var wire 1 c" update_event_i $end
+$var wire 16 |" cnt_i [15:0] $end
+$var wire 16 }" cmp_start_i [15:0] $end
+$var wire 16 ~" cmp_end_i [15:0] $end
+$var parameter 32 !# WIDTH $end
+$var reg 16 "# cmp_end_reg [15:0] $end
+$var reg 16 ## cmp_start_reg [15:0] $end
+$var reg 1 r" cnt_eq_cmp_end_o $end
+$var reg 1 q" cnt_eq_cmp_start_o $end
+$var reg 1 n" cnt_gt_cmp_end_o $end
+$var reg 1 m" cnt_gt_cmp_start_o $end
+$upscope $end
+$scope module u_pwm_comparator_ch2 $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 . rst_n_i $end
+$var wire 1 c" update_event_i $end
+$var wire 16 $# cnt_i [15:0] $end
+$var wire 16 %# cmp_start_i [15:0] $end
+$var wire 16 &# cmp_end_i [15:0] $end
+$var parameter 32 '# WIDTH $end
+$var reg 16 (# cmp_end_reg [15:0] $end
+$var reg 16 )# cmp_start_reg [15:0] $end
+$var reg 1 p" cnt_eq_cmp_end_o $end
+$var reg 1 o" cnt_eq_cmp_start_o $end
+$var reg 1 l" cnt_gt_cmp_end_o $end
+$var reg 1 k" cnt_gt_cmp_start_o $end
+$upscope $end
+$scope module u_pwm_counter $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 . rst_n_i $end
+$var wire 1 K cnt_en_i $end
+$var wire 1 w" ck_cnt_i $end
+$var wire 16 *# arr_preload_i [15:0] $end
+$var parameter 32 +# CNT_WIDTH $end
+$var reg 16 ,# arr_shadow_reg [15:0] $end
+$var reg 16 -# cnt_o [15:0] $end
+$var reg 1 c" overflow_o $end
+$upscope $end
+$scope module u_pwm_oc_ch1 $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 r" cmp_end_eq_i $end
+$var wire 1 n" cmp_end_gt_i $end
+$var wire 1 q" cmp_start_eq_i $end
+$var wire 1 m" cmp_start_gt_i $end
+$var wire 1 .# dtg_src_sel_i $end
+$var wire 1 /# oc_comp_pol_i $end
+$var wire 2 0# oc_comp_sel_i [1:0] $end
+$var wire 1 1# oc_main_pol_i $end
+$var wire 2 2# oc_main_sel_i [1:0] $end
+$var wire 1 3# oc_mode_i $end
+$var wire 1 . rst_n_i $end
+$var wire 1 c" update_event_i $end
+$var wire 1 4# oc_ref_b_int $end
+$var wire 1 5# oc_ref_a_int $end
+$var wire 1 e" oc_main_o $end
+$var wire 1 6# oc_main_dt_int $end
+$var wire 1 g" oc_comp_o $end
+$var wire 1 7# oc_comp_dt_int $end
+$var wire 8 8# dtg_preload_i [7:0] $end
+$var wire 1 9# dtg_input_int $end
+$var parameter 32 :# DEADTIME_WIDTH $end
+$var reg 1 ;# oc_comp_mux_int $end
+$var reg 1 <# oc_main_mux_int $end
+$scope module u_deadtime $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 6# pwm_high_o $end
+$var wire 1 9# pwm_in_i $end
+$var wire 1 7# pwm_low_o $end
+$var wire 1 . rst_n_i $end
+$var wire 1 c" update_event_i $end
+$var wire 8 =# dtg_preload_i [7:0] $end
+$var parameter 32 ># WIDTH $end
+$var reg 8 ?# dt_counter_r [7:0] $end
+$var reg 8 @# dtg_shadow_r [7:0] $end
+$var reg 1 A# pwm_in_dly_r $end
+$upscope $end
+$scope module u_oc_ref $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 r" cmp_end_eq_i $end
+$var wire 1 n" cmp_end_gt_i $end
+$var wire 1 q" cmp_start_eq_i $end
+$var wire 1 m" cmp_start_gt_i $end
+$var wire 1 3# mode_i $end
+$var wire 1 . rst_n_i $end
+$var reg 1 5# oc_a_ref_o $end
+$var reg 1 4# oc_b_ref_o $end
+$upscope $end
+$upscope $end
+$scope module u_pwm_oc_ch2 $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 p" cmp_end_eq_i $end
+$var wire 1 l" cmp_end_gt_i $end
+$var wire 1 o" cmp_start_eq_i $end
+$var wire 1 k" cmp_start_gt_i $end
+$var wire 1 B# dtg_src_sel_i $end
+$var wire 1 C# oc_comp_pol_i $end
+$var wire 2 D# oc_comp_sel_i [1:0] $end
+$var wire 1 E# oc_main_pol_i $end
+$var wire 2 F# oc_main_sel_i [1:0] $end
+$var wire 1 G# oc_mode_i $end
+$var wire 1 . rst_n_i $end
+$var wire 1 c" update_event_i $end
+$var wire 1 H# oc_ref_b_int $end
+$var wire 1 I# oc_ref_a_int $end
+$var wire 1 d" oc_main_o $end
+$var wire 1 J# oc_main_dt_int $end
+$var wire 1 f" oc_comp_o $end
+$var wire 1 K# oc_comp_dt_int $end
+$var wire 8 L# dtg_preload_i [7:0] $end
+$var wire 1 M# dtg_input_int $end
+$var parameter 32 N# DEADTIME_WIDTH $end
+$var reg 1 O# oc_comp_mux_int $end
+$var reg 1 P# oc_main_mux_int $end
+$scope module u_deadtime $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 J# pwm_high_o $end
+$var wire 1 M# pwm_in_i $end
+$var wire 1 K# pwm_low_o $end
+$var wire 1 . rst_n_i $end
+$var wire 1 c" update_event_i $end
+$var wire 8 Q# dtg_preload_i [7:0] $end
+$var parameter 32 R# WIDTH $end
+$var reg 8 S# dt_counter_r [7:0] $end
+$var reg 8 T# dtg_shadow_r [7:0] $end
+$var reg 1 U# pwm_in_dly_r $end
+$upscope $end
+$scope module u_oc_ref $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 p" cmp_end_eq_i $end
+$var wire 1 l" cmp_end_gt_i $end
+$var wire 1 o" cmp_start_eq_i $end
+$var wire 1 k" cmp_start_gt_i $end
+$var wire 1 G# mode_i $end
+$var wire 1 . rst_n_i $end
+$var reg 1 I# oc_a_ref_o $end
+$var reg 1 H# oc_b_ref_o $end
+$upscope $end
+$upscope $end
+$scope module u_pwm_prescaler $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 . rst_n_i $end
+$var wire 16 V# psc_preload_i [15:0] $end
+$var wire 1 K cen_i $end
+$var parameter 32 W# PSC_WIDTH $end
+$var reg 1 w" ck_cnt_o $end
+$var reg 16 X# psc_counter_reg [15:0] $end
+$var reg 16 Y# psc_shadow_reg [15:0] $end
+$var reg 1 Z# uev_o $end
+$upscope $end
+$upscope $end
+$scope module u_pwm_core_3 $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 ; pwm_ch1_a_o $end
+$var wire 1 : pwm_ch1_b_o $end
+$var wire 1 9 pwm_ch2_a_o $end
+$var wire 1 8 pwm_ch2_b_o $end
+$var wire 1 . rst_n_i $end
+$var wire 16 [# psc_preload_w [15:0] $end
+$var wire 1 \# overflow_w $end
+$var wire 1 ]# oc_main_ch2_o $end
+$var wire 1 ^# oc_main_ch1_o $end
+$var wire 1 _# oc_comp_ch2_o $end
+$var wire 1 `# oc_comp_ch1_o $end
+$var wire 8 a# dtg_ch2_w [7:0] $end
+$var wire 8 b# dtg_ch1_w [7:0] $end
+$var wire 16 c# cnt_val_w [15:0] $end
+$var wire 1 d# cnt_gt_cmp_ch2_start_w $end
+$var wire 1 e# cnt_gt_cmp_ch2_end_w $end
+$var wire 1 f# cnt_gt_cmp_ch1_start_w $end
+$var wire 1 g# cnt_gt_cmp_ch1_end_w $end
+$var wire 1 h# cnt_eq_cmp_ch2_start_w $end
+$var wire 1 i# cnt_eq_cmp_ch2_end_w $end
+$var wire 1 j# cnt_eq_cmp_ch1_start_w $end
+$var wire 1 k# cnt_eq_cmp_ch1_end_w $end
+$var wire 1 I cnt_en_w $end
+$var wire 16 l# cmp_ch2_start_w [15:0] $end
+$var wire 16 m# cmp_ch2_end_w [15:0] $end
+$var wire 16 n# cmp_ch1_start_w [15:0] $end
+$var wire 16 o# cmp_ch1_end_w [15:0] $end
+$var wire 1 p# ck_cnt_w $end
+$var wire 16 q# cfg_reg_ch2 [15:0] $end
+$var wire 16 r# cfg_reg_ch1 [15:0] $end
+$var wire 16 s# arr_preload_w [15:0] $end
+$var parameter 32 t# WIDTH $end
+$scope module u_pwm_comparator_ch1 $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 . rst_n_i $end
+$var wire 1 \# update_event_i $end
+$var wire 16 u# cnt_i [15:0] $end
+$var wire 16 v# cmp_start_i [15:0] $end
+$var wire 16 w# cmp_end_i [15:0] $end
+$var parameter 32 x# WIDTH $end
+$var reg 16 y# cmp_end_reg [15:0] $end
+$var reg 16 z# cmp_start_reg [15:0] $end
+$var reg 1 k# cnt_eq_cmp_end_o $end
+$var reg 1 j# cnt_eq_cmp_start_o $end
+$var reg 1 g# cnt_gt_cmp_end_o $end
+$var reg 1 f# cnt_gt_cmp_start_o $end
+$upscope $end
+$scope module u_pwm_comparator_ch2 $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 . rst_n_i $end
+$var wire 1 \# update_event_i $end
+$var wire 16 {# cnt_i [15:0] $end
+$var wire 16 |# cmp_start_i [15:0] $end
+$var wire 16 }# cmp_end_i [15:0] $end
+$var parameter 32 ~# WIDTH $end
+$var reg 16 !$ cmp_end_reg [15:0] $end
+$var reg 16 "$ cmp_start_reg [15:0] $end
+$var reg 1 i# cnt_eq_cmp_end_o $end
+$var reg 1 h# cnt_eq_cmp_start_o $end
+$var reg 1 e# cnt_gt_cmp_end_o $end
+$var reg 1 d# cnt_gt_cmp_start_o $end
+$upscope $end
+$scope module u_pwm_counter $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 . rst_n_i $end
+$var wire 1 I cnt_en_i $end
+$var wire 1 p# ck_cnt_i $end
+$var wire 16 #$ arr_preload_i [15:0] $end
+$var parameter 32 $$ CNT_WIDTH $end
+$var reg 16 %$ arr_shadow_reg [15:0] $end
+$var reg 16 &$ cnt_o [15:0] $end
+$var reg 1 \# overflow_o $end
+$upscope $end
+$scope module u_pwm_oc_ch1 $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 k# cmp_end_eq_i $end
+$var wire 1 g# cmp_end_gt_i $end
+$var wire 1 j# cmp_start_eq_i $end
+$var wire 1 f# cmp_start_gt_i $end
+$var wire 1 '$ dtg_src_sel_i $end
+$var wire 1 ($ oc_comp_pol_i $end
+$var wire 2 )$ oc_comp_sel_i [1:0] $end
+$var wire 1 *$ oc_main_pol_i $end
+$var wire 2 +$ oc_main_sel_i [1:0] $end
+$var wire 1 ,$ oc_mode_i $end
+$var wire 1 . rst_n_i $end
+$var wire 1 \# update_event_i $end
+$var wire 1 -$ oc_ref_b_int $end
+$var wire 1 .$ oc_ref_a_int $end
+$var wire 1 ^# oc_main_o $end
+$var wire 1 /$ oc_main_dt_int $end
+$var wire 1 `# oc_comp_o $end
+$var wire 1 0$ oc_comp_dt_int $end
+$var wire 8 1$ dtg_preload_i [7:0] $end
+$var wire 1 2$ dtg_input_int $end
+$var parameter 32 3$ DEADTIME_WIDTH $end
+$var reg 1 4$ oc_comp_mux_int $end
+$var reg 1 5$ oc_main_mux_int $end
+$scope module u_deadtime $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 /$ pwm_high_o $end
+$var wire 1 2$ pwm_in_i $end
+$var wire 1 0$ pwm_low_o $end
+$var wire 1 . rst_n_i $end
+$var wire 1 \# update_event_i $end
+$var wire 8 6$ dtg_preload_i [7:0] $end
+$var parameter 32 7$ WIDTH $end
+$var reg 8 8$ dt_counter_r [7:0] $end
+$var reg 8 9$ dtg_shadow_r [7:0] $end
+$var reg 1 :$ pwm_in_dly_r $end
+$upscope $end
+$scope module u_oc_ref $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 k# cmp_end_eq_i $end
+$var wire 1 g# cmp_end_gt_i $end
+$var wire 1 j# cmp_start_eq_i $end
+$var wire 1 f# cmp_start_gt_i $end
+$var wire 1 ,$ mode_i $end
+$var wire 1 . rst_n_i $end
+$var reg 1 .$ oc_a_ref_o $end
+$var reg 1 -$ oc_b_ref_o $end
+$upscope $end
+$upscope $end
+$scope module u_pwm_oc_ch2 $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 i# cmp_end_eq_i $end
+$var wire 1 e# cmp_end_gt_i $end
+$var wire 1 h# cmp_start_eq_i $end
+$var wire 1 d# cmp_start_gt_i $end
+$var wire 1 ;$ dtg_src_sel_i $end
+$var wire 1 <$ oc_comp_pol_i $end
+$var wire 2 =$ oc_comp_sel_i [1:0] $end
+$var wire 1 >$ oc_main_pol_i $end
+$var wire 2 ?$ oc_main_sel_i [1:0] $end
+$var wire 1 @$ oc_mode_i $end
+$var wire 1 . rst_n_i $end
+$var wire 1 \# update_event_i $end
+$var wire 1 A$ oc_ref_b_int $end
+$var wire 1 B$ oc_ref_a_int $end
+$var wire 1 ]# oc_main_o $end
+$var wire 1 C$ oc_main_dt_int $end
+$var wire 1 _# oc_comp_o $end
+$var wire 1 D$ oc_comp_dt_int $end
+$var wire 8 E$ dtg_preload_i [7:0] $end
+$var wire 1 F$ dtg_input_int $end
+$var parameter 32 G$ DEADTIME_WIDTH $end
+$var reg 1 H$ oc_comp_mux_int $end
+$var reg 1 I$ oc_main_mux_int $end
+$scope module u_deadtime $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 C$ pwm_high_o $end
+$var wire 1 F$ pwm_in_i $end
+$var wire 1 D$ pwm_low_o $end
+$var wire 1 . rst_n_i $end
+$var wire 1 \# update_event_i $end
+$var wire 8 J$ dtg_preload_i [7:0] $end
+$var parameter 32 K$ WIDTH $end
+$var reg 8 L$ dt_counter_r [7:0] $end
+$var reg 8 M$ dtg_shadow_r [7:0] $end
+$var reg 1 N$ pwm_in_dly_r $end
+$upscope $end
+$scope module u_oc_ref $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 i# cmp_end_eq_i $end
+$var wire 1 e# cmp_end_gt_i $end
+$var wire 1 h# cmp_start_eq_i $end
+$var wire 1 d# cmp_start_gt_i $end
+$var wire 1 @$ mode_i $end
+$var wire 1 . rst_n_i $end
+$var reg 1 B$ oc_a_ref_o $end
+$var reg 1 A$ oc_b_ref_o $end
+$upscope $end
+$upscope $end
+$scope module u_pwm_prescaler $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 . rst_n_i $end
+$var wire 16 O$ psc_preload_i [15:0] $end
+$var wire 1 I cen_i $end
+$var parameter 32 P$ PSC_WIDTH $end
+$var reg 1 p# ck_cnt_o $end
+$var reg 16 Q$ psc_counter_reg [15:0] $end
+$var reg 16 R$ psc_shadow_reg [15:0] $end
+$var reg 1 S$ uev_o $end
+$upscope $end
+$upscope $end
+$scope module u_pwm_core_4 $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 7 pwm_ch1_a_o $end
+$var wire 1 6 pwm_ch1_b_o $end
+$var wire 1 5 pwm_ch2_a_o $end
+$var wire 1 4 pwm_ch2_b_o $end
+$var wire 1 . rst_n_i $end
+$var wire 16 T$ psc_preload_w [15:0] $end
+$var wire 1 U$ overflow_w $end
+$var wire 1 V$ oc_main_ch2_o $end
+$var wire 1 W$ oc_main_ch1_o $end
+$var wire 1 X$ oc_comp_ch2_o $end
+$var wire 1 Y$ oc_comp_ch1_o $end
+$var wire 8 Z$ dtg_ch2_w [7:0] $end
+$var wire 8 [$ dtg_ch1_w [7:0] $end
+$var wire 16 \$ cnt_val_w [15:0] $end
+$var wire 1 ]$ cnt_gt_cmp_ch2_start_w $end
+$var wire 1 ^$ cnt_gt_cmp_ch2_end_w $end
+$var wire 1 _$ cnt_gt_cmp_ch1_start_w $end
+$var wire 1 `$ cnt_gt_cmp_ch1_end_w $end
+$var wire 1 a$ cnt_eq_cmp_ch2_start_w $end
+$var wire 1 b$ cnt_eq_cmp_ch2_end_w $end
+$var wire 1 c$ cnt_eq_cmp_ch1_start_w $end
+$var wire 1 d$ cnt_eq_cmp_ch1_end_w $end
+$var wire 1 H cnt_en_w $end
+$var wire 16 e$ cmp_ch2_start_w [15:0] $end
+$var wire 16 f$ cmp_ch2_end_w [15:0] $end
+$var wire 16 g$ cmp_ch1_start_w [15:0] $end
+$var wire 16 h$ cmp_ch1_end_w [15:0] $end
+$var wire 1 i$ ck_cnt_w $end
+$var wire 16 j$ cfg_reg_ch2 [15:0] $end
+$var wire 16 k$ cfg_reg_ch1 [15:0] $end
+$var wire 16 l$ arr_preload_w [15:0] $end
+$var parameter 32 m$ WIDTH $end
+$scope module u_pwm_comparator_ch1 $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 . rst_n_i $end
+$var wire 1 U$ update_event_i $end
+$var wire 16 n$ cnt_i [15:0] $end
+$var wire 16 o$ cmp_start_i [15:0] $end
+$var wire 16 p$ cmp_end_i [15:0] $end
+$var parameter 32 q$ WIDTH $end
+$var reg 16 r$ cmp_end_reg [15:0] $end
+$var reg 16 s$ cmp_start_reg [15:0] $end
+$var reg 1 d$ cnt_eq_cmp_end_o $end
+$var reg 1 c$ cnt_eq_cmp_start_o $end
+$var reg 1 `$ cnt_gt_cmp_end_o $end
+$var reg 1 _$ cnt_gt_cmp_start_o $end
+$upscope $end
+$scope module u_pwm_comparator_ch2 $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 . rst_n_i $end
+$var wire 1 U$ update_event_i $end
+$var wire 16 t$ cnt_i [15:0] $end
+$var wire 16 u$ cmp_start_i [15:0] $end
+$var wire 16 v$ cmp_end_i [15:0] $end
+$var parameter 32 w$ WIDTH $end
+$var reg 16 x$ cmp_end_reg [15:0] $end
+$var reg 16 y$ cmp_start_reg [15:0] $end
+$var reg 1 b$ cnt_eq_cmp_end_o $end
+$var reg 1 a$ cnt_eq_cmp_start_o $end
+$var reg 1 ^$ cnt_gt_cmp_end_o $end
+$var reg 1 ]$ cnt_gt_cmp_start_o $end
+$upscope $end
+$scope module u_pwm_counter $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 . rst_n_i $end
+$var wire 1 H cnt_en_i $end
+$var wire 1 i$ ck_cnt_i $end
+$var wire 16 z$ arr_preload_i [15:0] $end
+$var parameter 32 {$ CNT_WIDTH $end
+$var reg 16 |$ arr_shadow_reg [15:0] $end
+$var reg 16 }$ cnt_o [15:0] $end
+$var reg 1 U$ overflow_o $end
+$upscope $end
+$scope module u_pwm_oc_ch1 $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 d$ cmp_end_eq_i $end
+$var wire 1 `$ cmp_end_gt_i $end
+$var wire 1 c$ cmp_start_eq_i $end
+$var wire 1 _$ cmp_start_gt_i $end
+$var wire 1 ~$ dtg_src_sel_i $end
+$var wire 1 !% oc_comp_pol_i $end
+$var wire 2 "% oc_comp_sel_i [1:0] $end
+$var wire 1 #% oc_main_pol_i $end
+$var wire 2 $% oc_main_sel_i [1:0] $end
+$var wire 1 %% oc_mode_i $end
+$var wire 1 . rst_n_i $end
+$var wire 1 U$ update_event_i $end
+$var wire 1 &% oc_ref_b_int $end
+$var wire 1 '% oc_ref_a_int $end
+$var wire 1 W$ oc_main_o $end
+$var wire 1 (% oc_main_dt_int $end
+$var wire 1 Y$ oc_comp_o $end
+$var wire 1 )% oc_comp_dt_int $end
+$var wire 8 *% dtg_preload_i [7:0] $end
+$var wire 1 +% dtg_input_int $end
+$var parameter 32 ,% DEADTIME_WIDTH $end
+$var reg 1 -% oc_comp_mux_int $end
+$var reg 1 .% oc_main_mux_int $end
+$scope module u_deadtime $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 (% pwm_high_o $end
+$var wire 1 +% pwm_in_i $end
+$var wire 1 )% pwm_low_o $end
+$var wire 1 . rst_n_i $end
+$var wire 1 U$ update_event_i $end
+$var wire 8 /% dtg_preload_i [7:0] $end
+$var parameter 32 0% WIDTH $end
+$var reg 8 1% dt_counter_r [7:0] $end
+$var reg 8 2% dtg_shadow_r [7:0] $end
+$var reg 1 3% pwm_in_dly_r $end
+$upscope $end
+$scope module u_oc_ref $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 d$ cmp_end_eq_i $end
+$var wire 1 `$ cmp_end_gt_i $end
+$var wire 1 c$ cmp_start_eq_i $end
+$var wire 1 _$ cmp_start_gt_i $end
+$var wire 1 %% mode_i $end
+$var wire 1 . rst_n_i $end
+$var reg 1 '% oc_a_ref_o $end
+$var reg 1 &% oc_b_ref_o $end
+$upscope $end
+$upscope $end
+$scope module u_pwm_oc_ch2 $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 b$ cmp_end_eq_i $end
+$var wire 1 ^$ cmp_end_gt_i $end
+$var wire 1 a$ cmp_start_eq_i $end
+$var wire 1 ]$ cmp_start_gt_i $end
+$var wire 1 4% dtg_src_sel_i $end
+$var wire 1 5% oc_comp_pol_i $end
+$var wire 2 6% oc_comp_sel_i [1:0] $end
+$var wire 1 7% oc_main_pol_i $end
+$var wire 2 8% oc_main_sel_i [1:0] $end
+$var wire 1 9% oc_mode_i $end
+$var wire 1 . rst_n_i $end
+$var wire 1 U$ update_event_i $end
+$var wire 1 :% oc_ref_b_int $end
+$var wire 1 ;% oc_ref_a_int $end
+$var wire 1 V$ oc_main_o $end
+$var wire 1 <% oc_main_dt_int $end
+$var wire 1 X$ oc_comp_o $end
+$var wire 1 =% oc_comp_dt_int $end
+$var wire 8 >% dtg_preload_i [7:0] $end
+$var wire 1 ?% dtg_input_int $end
+$var parameter 32 @% DEADTIME_WIDTH $end
+$var reg 1 A% oc_comp_mux_int $end
+$var reg 1 B% oc_main_mux_int $end
+$scope module u_deadtime $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 <% pwm_high_o $end
+$var wire 1 ?% pwm_in_i $end
+$var wire 1 =% pwm_low_o $end
+$var wire 1 . rst_n_i $end
+$var wire 1 U$ update_event_i $end
+$var wire 8 C% dtg_preload_i [7:0] $end
+$var parameter 32 D% WIDTH $end
+$var reg 8 E% dt_counter_r [7:0] $end
+$var reg 8 F% dtg_shadow_r [7:0] $end
+$var reg 1 G% pwm_in_dly_r $end
+$upscope $end
+$scope module u_oc_ref $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 b$ cmp_end_eq_i $end
+$var wire 1 ^$ cmp_end_gt_i $end
+$var wire 1 a$ cmp_start_eq_i $end
+$var wire 1 ]$ cmp_start_gt_i $end
+$var wire 1 9% mode_i $end
+$var wire 1 . rst_n_i $end
+$var reg 1 ;% oc_a_ref_o $end
+$var reg 1 :% oc_b_ref_o $end
+$upscope $end
+$upscope $end
+$scope module u_pwm_prescaler $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 . rst_n_i $end
+$var wire 16 H% psc_preload_i [15:0] $end
+$var wire 1 H cen_i $end
+$var parameter 32 I% PSC_WIDTH $end
+$var reg 1 i$ ck_cnt_o $end
+$var reg 16 J% psc_counter_reg [15:0] $end
+$var reg 16 K% psc_shadow_reg [15:0] $end
+$var reg 1 L% uev_o $end
+$upscope $end
+$upscope $end
+$scope module u_pwm_register $end
+$var wire 8 M% addr_i [7:0] $end
+$var wire 1 , clk_psc_i $end
+$var wire 1 - rd_en_i $end
+$var wire 1 . rst_n_i $end
+$var wire 16 N% wr_data_i [15:0] $end
+$var wire 1 0 wr_en_i $end
+$var parameter 32 O% WIDTH $end
+$var reg 16 P% arr_preload_1_o [15:0] $end
+$var reg 16 Q% arr_preload_2_o [15:0] $end
+$var reg 16 R% arr_preload_3_o [15:0] $end
+$var reg 16 S% arr_preload_4_o [15:0] $end
+$var reg 1 K cen_1_o $end
+$var reg 1 J cen_2_o $end
+$var reg 1 I cen_3_o $end
+$var reg 1 H cen_4_o $end
+$var reg 16 T% cfg_reg_ch1 [15:0] $end
+$var reg 16 U% cfg_reg_ch2 [15:0] $end
+$var reg 16 V% cfg_reg_ch3 [15:0] $end
+$var reg 16 W% cfg_reg_ch4 [15:0] $end
+$var reg 16 X% cfg_reg_ch5 [15:0] $end
+$var reg 16 Y% cfg_reg_ch6 [15:0] $end
+$var reg 16 Z% cfg_reg_ch7 [15:0] $end
+$var reg 16 [% cfg_reg_ch8 [15:0] $end
+$var reg 16 \% cmp_ch1_end_o [15:0] $end
+$var reg 16 ]% cmp_ch1_start_o [15:0] $end
+$var reg 16 ^% cmp_ch2_end_o [15:0] $end
+$var reg 16 _% cmp_ch2_start_o [15:0] $end
+$var reg 16 `% cmp_ch3_end_o [15:0] $end
+$var reg 16 a% cmp_ch3_start_o [15:0] $end
+$var reg 16 b% cmp_ch4_end_o [15:0] $end
+$var reg 16 c% cmp_ch4_start_o [15:0] $end
+$var reg 16 d% cmp_ch5_end_o [15:0] $end
+$var reg 16 e% cmp_ch5_start_o [15:0] $end
+$var reg 16 f% cmp_ch6_end_o [15:0] $end
+$var reg 16 g% cmp_ch6_start_o [15:0] $end
+$var reg 16 h% cmp_ch7_end_o [15:0] $end
+$var reg 16 i% cmp_ch7_start_o [15:0] $end
+$var reg 16 j% cmp_ch8_end_o [15:0] $end
+$var reg 16 k% cmp_ch8_start_o [15:0] $end
+$var reg 8 l% dtg_ch1_o [7:0] $end
+$var reg 8 m% dtg_ch2_o [7:0] $end
+$var reg 8 n% dtg_ch3_o [7:0] $end
+$var reg 8 o% dtg_ch4_o [7:0] $end
+$var reg 8 p% dtg_ch5_o [7:0] $end
+$var reg 8 q% dtg_ch6_o [7:0] $end
+$var reg 8 r% dtg_ch7_o [7:0] $end
+$var reg 8 s% dtg_ch8_o [7:0] $end
+$var reg 16 t% psc_preload_1_o [15:0] $end
+$var reg 16 u% psc_preload_2_o [15:0] $end
+$var reg 16 v% psc_preload_3_o [15:0] $end
+$var reg 16 w% psc_preload_4_o [15:0] $end
+$var reg 16 x% rd_data_o [15:0] $end
+$upscope $end
+$upscope $end
+$scope task read_reg $end
+$var reg 8 y% a [7:0] $end
+$upscope $end
+$scope task test_case $end
+$upscope $end
+$scope task write_reg $end
+$var reg 8 z% a [7:0] $end
+$var reg 16 {% d [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10000 O%
+b10000 I%
+b1000 D%
+b1000 @%
+b1000 0%
+b1000 ,%
+b10000 {$
+b10000 w$
+b10000 q$
+b10000 m$
+b10000 P$
+b1000 K$
+b1000 G$
+b1000 7$
+b1000 3$
+b10000 $$
+b10000 ~#
+b10000 x#
+b10000 t#
+b10000 W#
+b1000 R#
+b1000 N#
+b1000 >#
+b1000 :#
+b10000 +#
+b10000 '#
+b10000 !#
+b10000 {"
+b10000 ^"
+b1000 Y"
+b1000 U"
+b1000 E"
+b1000 A"
+b10000 2"
+b10000 ."
+b10000 ("
+b10000 $"
+b10000 h
+b10000 *
+$end
+#0
+$dumpvars
+bx {%
+bx z%
+bx y%
+b0 x%
+b0 w%
+b0 v%
+b0 u%
+b0 t%
+b1 s%
+b1 r%
+b1 q%
+b1 p%
+b1 o%
+b1 n%
+b1 m%
+b1 l%
+b0 k%
+b0 j%
+b0 i%
+b0 h%
+b0 g%
+b0 f%
+b0 e%
+b0 d%
+b0 c%
+b0 b%
+b0 a%
+b0 `%
+b0 _%
+b0 ^%
+b0 ]%
+b0 \%
+b0 [%
+b0 Z%
+b0 Y%
+b0 X%
+b0 W%
+b0 V%
+b0 U%
+b0 T%
+b1111111111111111 S%
+b1111111111111111 R%
+b1111111111111111 Q%
+b1111111111111111 P%
+b0 N%
+b0 M%
+0L%
+b0 K%
+b0 J%
+b0 H%
+0G%
+b0 F%
+b0 E%
+b1 C%
+0B%
+0A%
+0?%
+b1 >%
+1=%
+0<%
+0;%
+0:%
+09%
+b0 8%
+07%
+b0 6%
+05%
+04%
+03%
+b0 2%
+b0 1%
+b1 /%
+0.%
+0-%
+0+%
+b1 *%
+1)%
+0(%
+0'%
+0&%
+0%%
+b0 $%
+0#%
+b0 "%
+0!%
+0~$
+b0 }$
+b0 |$
+b1111111111111111 z$
+b0 y$
+b0 x$
+b0 v$
+b0 u$
+b0 t$
+b0 s$
+b0 r$
+b0 p$
+b0 o$
+b0 n$
+b1111111111111111 l$
+b0 k$
+b0 j$
+0i$
+b0 h$
+b0 g$
+b0 f$
+b0 e$
+0d$
+0c$
+0b$
+0a$
+0`$
+0_$
+0^$
+0]$
+b0 \$
+b1 [$
+b1 Z$
+0Y$
+0X$
+0W$
+0V$
+0U$
+b0 T$
+0S$
+b0 R$
+b0 Q$
+b0 O$
+0N$
+b0 M$
+b0 L$
+b1 J$
+0I$
+0H$
+0F$
+b1 E$
+1D$
+0C$
+0B$
+0A$
+0@$
+b0 ?$
+0>$
+b0 =$
+0<$
+0;$
+0:$
+b0 9$
+b0 8$
+b1 6$
+05$
+04$
+02$
+b1 1$
+10$
+0/$
+0.$
+0-$
+0,$
+b0 +$
+0*$
+b0 )$
+0($
+0'$
+b0 &$
+b0 %$
+b1111111111111111 #$
+b0 "$
+b0 !$
+b0 }#
+b0 |#
+b0 {#
+b0 z#
+b0 y#
+b0 w#
+b0 v#
+b0 u#
+b1111111111111111 s#
+b0 r#
+b0 q#
+0p#
+b0 o#
+b0 n#
+b0 m#
+b0 l#
+0k#
+0j#
+0i#
+0h#
+0g#
+0f#
+0e#
+0d#
+b0 c#
+b1 b#
+b1 a#
+0`#
+0_#
+0^#
+0]#
+0\#
+b0 [#
+0Z#
+b0 Y#
+b0 X#
+b0 V#
+0U#
+b0 T#
+b0 S#
+b1 Q#
+0P#
+0O#
+0M#
+b1 L#
+1K#
+0J#
+0I#
+0H#
+0G#
+b0 F#
+0E#
+b0 D#
+0C#
+0B#
+0A#
+b0 @#
+b0 ?#
+b1 =#
+0<#
+0;#
+09#
+b1 8#
+17#
+06#
+05#
+04#
+03#
+b0 2#
+01#
+b0 0#
+0/#
+0.#
+b0 -#
+b0 ,#
+b1111111111111111 *#
+b0 )#
+b0 (#
+b0 &#
+b0 %#
+b0 $#
+b0 ##
+b0 "#
+b0 ~"
+b0 }"
+b0 |"
+b1111111111111111 z"
+b0 y"
+b0 x"
+0w"
+b0 v"
+b0 u"
+b0 t"
+b0 s"
+0r"
+0q"
+0p"
+0o"
+0n"
+0m"
+0l"
+0k"
+b0 j"
+b1 i"
+b1 h"
+0g"
+0f"
+0e"
+0d"
+0c"
+b0 b"
+0a"
+b0 `"
+b0 _"
+b0 ]"
+0\"
+b0 ["
+b0 Z"
+b1 X"
+0W"
+0V"
+0T"
+b1 S"
+1R"
+0Q"
+0P"
+0O"
+0N"
+b0 M"
+0L"
+b0 K"
+0J"
+0I"
+0H"
+b0 G"
+b0 F"
+b1 D"
+0C"
+0B"
+0@"
+b1 ?"
+1>"
+0="
+0<"
+0;"
+0:"
+b0 9"
+08"
+b0 7"
+06"
+05"
+b0 4"
+b0 3"
+b1111111111111111 1"
+b0 0"
+b0 /"
+b0 -"
+b0 ,"
+b0 +"
+b0 *"
+b0 )"
+b0 '"
+b0 &"
+b0 %"
+b1111111111111111 #"
+b0 ""
+b0 !"
+0~
+b0 }
+b0 |
+b0 {
+b0 z
+0y
+0x
+0w
+0v
+0u
+0t
+0s
+0r
+b0 q
+b1 p
+b1 o
+0n
+0m
+0l
+0k
+0j
+b0 i
+b1111111111111111 g
+b1111111111111111 f
+b1111111111111111 e
+b1111111111111111 d
+b0 c
+b0 b
+b0 a
+b0 `
+b0 _
+b0 ^
+b0 ]
+b0 \
+b0 [
+b0 Z
+b0 Y
+b0 X
+b0 W
+b0 V
+b0 U
+b0 T
+b0 S
+b0 R
+b0 Q
+b0 P
+b0 O
+b0 N
+b0 M
+b0 L
+0K
+0J
+0I
+0H
+b1 G
+b1 F
+b1 E
+b1 D
+b1 C
+b1 B
+b1 A
+b1 @
+b0 ?
+b0 >
+b0 =
+b0 <
+0;
+0:
+09
+08
+07
+06
+05
+04
+b0 3
+b0 2
+b0 1
+00
+b0 /
+0.
+0-
+0,
+b0 +
+0)
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+b0 !
+$end
+#1
+1,
+#2
+0,
+1.
+#3
+0>"
+0R"
+07#
+0K#
+00$
+0D$
+0)%
+0=%
+1@"
+1T"
+19#
+1M#
+12$
+1F$
+1+%
+1?%
+b1111111111111111 3"
+1y
+1x
+1;"
+1<"
+1w
+1v
+1O"
+1P"
+b1111111111111111 ,#
+1r"
+1q"
+14#
+15#
+1p"
+1o"
+1H#
+1I#
+b1111111111111111 %$
+1k#
+1j#
+1-$
+1.$
+1i#
+1h#
+1A$
+1B$
+b1111111111111111 |$
+1d$
+1c$
+1&%
+1'%
+1b$
+1a$
+1:%
+1;%
+1,
+#4
+0,
+b0 {%
+b1 z%
+#5
+0?%
+0+%
+0F$
+02$
+0M#
+09#
+0T"
+0@"
+1G%
+0:%
+0;%
+13%
+0&%
+0'%
+1N$
+0A$
+0B$
+1:$
+0-$
+0.$
+1U#
+0H#
+0I#
+1A#
+04#
+05#
+1\"
+0O"
+0P"
+1H"
+0;"
+0<"
+b1 +
+b1 1
+b1 M%
+10
+1,
+#6
+0,
+#7
+1>"
+1R"
+17#
+1K#
+10$
+1D$
+1)%
+1=%
+0H"
+0\"
+0A#
+0U#
+0:$
+0N$
+03%
+0G%
+b1001 {%
+b10 z%
+00
+1,
+#8
+0,
+#9
+b1001 g
+b1001 #"
+b1001 1"
+b1001 z"
+b1001 *#
+b1001 P%
+b1001 /
+b1001 2
+b1001 N%
+b10 +
+b10 1
+b10 M%
+10
+1,
+#10
+0,
+#11
+b1001 3"
+b1001 ,#
+b1 {%
+b11 z%
+00
+1,
+#12
+0,
+#13
+b1 >
+b1 u%
+b1 /
+b1 2
+b1 N%
+b11 +
+b11 1
+b11 M%
+10
+1,
+#14
+0,
+#15
+b111 {%
+b100 z%
+00
+1,
+#16
+0,
+#17
+b111 f
+b111 Q%
+b111 /
+b111 2
+b111 N%
+b100 +
+b100 1
+b100 M%
+10
+1,
+#18
+0,
+#19
+b10100 {%
+b110 z%
+00
+1,
+#20
+0,
+#21
+b10100 e
+b10100 s#
+b10100 #$
+b10100 R%
+b10100 /
+b10100 2
+b10100 N%
+b110 +
+b110 1
+b110 M%
+10
+1,
+#22
+0,
+#23
+b10100 %$
+b1 {%
+b0 z%
+00
+1,
+#24
+0,
+#25
+1K
+b1 /
+b1 2
+b1 N%
+b0 +
+b0 1
+b0 M%
+10
+1,
+#26
+0,
+#27
+1a"
+1~
+1Z#
+1w"
+00
+1,
+#28
+0,
+#29
+b1 j"
+b1 |"
+b1 $#
+b1 -#
+b1 q
+b1 %"
+b1 +"
+b1 4"
+1,
+#30
+0,
+#31
+b10 q
+b10 %"
+b10 +"
+b10 4"
+1u
+0y
+1t
+0x
+1s
+0w
+1r
+0v
+b10 j"
+b10 |"
+b10 $#
+b10 -#
+1n"
+0r"
+1m"
+0q"
+1l"
+0p"
+1k"
+0o"
+1,
+#32
+0,
+#33
+b11 j"
+b11 |"
+b11 $#
+b11 -#
+b11 q
+b11 %"
+b11 +"
+b11 4"
+1,
+#34
+0,
+#35
+b100 q
+b100 %"
+b100 +"
+b100 4"
+b100 j"
+b100 |"
+b100 $#
+b100 -#
+1,
+#36
+0,
+#37
+b101 j"
+b101 |"
+b101 $#
+b101 -#
+b101 q
+b101 %"
+b101 +"
+b101 4"
+1,
+#38
+0,
+#39
+b110 q
+b110 %"
+b110 +"
+b110 4"
+b110 j"
+b110 |"
+b110 $#
+b110 -#
+1,
+#40
+0,
+#41
+b111 j"
+b111 |"
+b111 $#
+b111 -#
+b111 q
+b111 %"
+b111 +"
+b111 4"
+1,
+#42
+0,
+#43
+b1000 q
+b1000 %"
+b1000 +"
+b1000 4"
+b1000 j"
+b1000 |"
+b1000 $#
+b1000 -#
+1,
+#44
+0,
+#45
+b1001 j"
+b1001 |"
+b1001 $#
+b1001 -#
+b1001 q
+b1001 %"
+b1001 +"
+b1001 4"
+1,
+#46
+0,
+#47
+1j
+b0 q
+b0 %"
+b0 +"
+b0 4"
+1c"
+b0 j"
+b0 |"
+b0 $#
+b0 -#
+1,
+#48
+0,
+#49
+b1 T#
+0l"
+1p"
+0k"
+1o"
+b1 @#
+0n"
+1r"
+0m"
+1q"
+0c"
+b1 j"
+b1 |"
+b1 $#
+b1 -#
+b1 ["
+0s
+1w
+0r
+1v
+b1 G"
+0u
+1y
+0t
+1x
+0j
+b1 q
+b1 %"
+b1 +"
+b1 4"
+1,
+#50
+0,
+#51
+b10 q
+b10 %"
+b10 +"
+b10 4"
+1u
+0y
+1t
+0x
+1s
+0w
+1r
+0v
+b10 j"
+b10 |"
+b10 $#
+b10 -#
+1n"
+0r"
+1m"
+0q"
+1l"
+0p"
+1k"
+0o"
+1,
+#52
+0,
+#53
+b11 j"
+b11 |"
+b11 $#
+b11 -#
+b11 q
+b11 %"
+b11 +"
+b11 4"
+1,
+#54
+0,
+#55
+b100 q
+b100 %"
+b100 +"
+b100 4"
+b100 j"
+b100 |"
+b100 $#
+b100 -#
+1,
+#56
+0,
+#57
+b101 j"
+b101 |"
+b101 $#
+b101 -#
+b101 q
+b101 %"
+b101 +"
+b101 4"
+1,
+#58
+0,
+#59
+b110 q
+b110 %"
+b110 +"
+b110 4"
+b110 j"
+b110 |"
+b110 $#
+b110 -#
+1,
+#60
+0,
+#61
+b111 j"
+b111 |"
+b111 $#
+b111 -#
+b111 q
+b111 %"
+b111 +"
+b111 4"
+1,
+#62
+0,
+#63
+b1000 q
+b1000 %"
+b1000 +"
+b1000 4"
+b1000 j"
+b1000 |"
+b1000 $#
+b1000 -#
+1,
+#64
+0,
+#65
+b1001 j"
+b1001 |"
+b1001 $#
+b1001 -#
+b1001 q
+b1001 %"
+b1001 +"
+b1001 4"
+1,
+#66
+0,
+#67
+1j
+b0 q
+b0 %"
+b0 +"
+b0 4"
+1c"
+b0 j"
+b0 |"
+b0 $#
+b0 -#
+1,
+#68
+0,
+#69
+0l"
+1p"
+0k"
+1o"
+0n"
+1r"
+0m"
+1q"
+0c"
+b1 j"
+b1 |"
+b1 $#
+b1 -#
+0s
+1w
+0r
+1v
+0u
+1y
+0t
+1x
+0j
+b1 q
+b1 %"
+b1 +"
+b1 4"
+1,
+#70
+0,
+#71
+b10 q
+b10 %"
+b10 +"
+b10 4"
+1u
+0y
+1t
+0x
+1s
+0w
+1r
+0v
+b10 j"
+b10 |"
+b10 $#
+b10 -#
+1n"
+0r"
+1m"
+0q"
+1l"
+0p"
+1k"
+0o"
+1,
+#72
+0,
+#73
+b11 j"
+b11 |"
+b11 $#
+b11 -#
+b11 q
+b11 %"
+b11 +"
+b11 4"
+1,
+#74
+0,
+#75
+b100 q
+b100 %"
+b100 +"
+b100 4"
+b100 j"
+b100 |"
+b100 $#
+b100 -#
+1,
+#76
+0,
+#77
+b101 j"
+b101 |"
+b101 $#
+b101 -#
+b101 q
+b101 %"
+b101 +"
+b101 4"
+1,
+#78
+0,
+#79
+b110 q
+b110 %"
+b110 +"
+b110 4"
+b110 j"
+b110 |"
+b110 $#
+b110 -#
+1,
+#80
+0,
+#81
+b111 j"
+b111 |"
+b111 $#
+b111 -#
+b111 q
+b111 %"
+b111 +"
+b111 4"
+1,
+#82
+0,
+#83
+b1000 q
+b1000 %"
+b1000 +"
+b1000 4"
+b1000 j"
+b1000 |"
+b1000 $#
+b1000 -#
+1,
+#84
+0,
+#85
+b1001 j"
+b1001 |"
+b1001 $#
+b1001 -#
+b1001 q
+b1001 %"
+b1001 +"
+b1001 4"
+1,
+#86
+0,
+#87
+1j
+b0 q
+b0 %"
+b0 +"
+b0 4"
+1c"
+b0 j"
+b0 |"
+b0 $#
+b0 -#
+1,
+#88
+0,
+#89
+0l"
+1p"
+0k"
+1o"
+0n"
+1r"
+0m"
+1q"
+0c"
+b1 j"
+b1 |"
+b1 $#
+b1 -#
+0s
+1w
+0r
+1v
+0u
+1y
+0t
+1x
+0j
+b1 q
+b1 %"
+b1 +"
+b1 4"
+1,
+#90
+0,
+#91
+b10 q
+b10 %"
+b10 +"
+b10 4"
+1u
+0y
+1t
+0x
+1s
+0w
+1r
+0v
+b10 j"
+b10 |"
+b10 $#
+b10 -#
+1n"
+0r"
+1m"
+0q"
+1l"
+0p"
+1k"
+0o"
+1,
+#92
+0,
+#93
+b11 j"
+b11 |"
+b11 $#
+b11 -#
+b11 q
+b11 %"
+b11 +"
+b11 4"
+1,
+#94
+0,
+#95
+b100 q
+b100 %"
+b100 +"
+b100 4"
+b100 j"
+b100 |"
+b100 $#
+b100 -#
+1,
+#96
+0,
+#97
+b101 j"
+b101 |"
+b101 $#
+b101 -#
+b101 q
+b101 %"
+b101 +"
+b101 4"
+1,

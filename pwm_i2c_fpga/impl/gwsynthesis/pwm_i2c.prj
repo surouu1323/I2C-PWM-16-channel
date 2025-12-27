@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW2AR-18C" package="QFN88" speed="8" partNumber="GW2AR-LV18QN88C8/I7"/>
+    <FileList>
+        <File path="E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\gowin_rpll\I2C_PLL_120Mhz_30Mhz.v" type="verilog"/>
+        <File path="E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\i2c\i2c_address_config.v" type="verilog"/>
+        <File path="E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\i2c\i2c_frame_bridge.v" type="verilog"/>
+        <File path="E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\i2c\i2c_input_filter.v" type="verilog"/>
+        <File path="E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\i2c\i2c_slave_interface.v" type="verilog"/>
+        <File path="E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\i2c\i2c_start_stop_detect.v" type="verilog"/>
+        <File path="E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\i2c\i2c_top.v" type="verilog"/>
+        <File path="E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\pwm\pwm_comparator.v" type="verilog"/>
+        <File path="E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\pwm\pwm_core.v" type="verilog"/>
+        <File path="E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\pwm\pwm_counter.v" type="verilog"/>
+        <File path="E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\pwm\pwm_oc.v" type="verilog"/>
+        <File path="E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\pwm\pwm_oc_deadtime.v" type="verilog"/>
+        <File path="E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\pwm\pwm_oc_refgen.v" type="verilog"/>
+        <File path="E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\pwm\pwm_prescaler.v" type="verilog"/>
+        <File path="E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\pwm\pwm_register.v" type="verilog"/>
+        <File path="E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\pwm\pwm_top.v" type="verilog"/>
+        <File path="E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\top.v" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="global_freq" value="100.000"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="output_file" value="E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\impl\gwsynthesis\pwm_i2c.vg"/>
+        <Option type="print_all_synthesis_warning" value="0"/>
+        <Option type="ram_rw_check" value="0"/>
+        <Option type="top_module" value="top"/>
+        <Option type="verilog_language" value="verilog-2001"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>

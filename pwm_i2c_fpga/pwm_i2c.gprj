@@ -1,0 +1,29 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW2AR-18C" pn="GW2AR-LV18QN88C8/I7">gw2ar18c-000</Device>
+    <FileList>
+        <File path="src/gowin_rpll/I2C_PLL_120Mhz_20Mhz.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_rpll/I2C_PLL_120Mhz_30Mhz.v" type="file.verilog" enable="1"/>
+        <File path="src/i2c/i2c_address_config.v" type="file.verilog" enable="1"/>
+        <File path="src/i2c/i2c_frame_bridge.v" type="file.verilog" enable="1"/>
+        <File path="src/i2c/i2c_input_filter.v" type="file.verilog" enable="1"/>
+        <File path="src/i2c/i2c_slave_interface.v" type="file.verilog" enable="1"/>
+        <File path="src/i2c/i2c_start_stop_detect.v" type="file.verilog" enable="1"/>
+        <File path="src/i2c/i2c_top.v" type="file.verilog" enable="1"/>
+        <File path="src/pwm/pwm_comparator.v" type="file.verilog" enable="1"/>
+        <File path="src/pwm/pwm_core.v" type="file.verilog" enable="1"/>
+        <File path="src/pwm/pwm_counter.v" type="file.verilog" enable="1"/>
+        <File path="src/pwm/pwm_oc.v" type="file.verilog" enable="1"/>
+        <File path="src/pwm/pwm_oc_deadtime.v" type="file.verilog" enable="1"/>
+        <File path="src/pwm/pwm_oc_refgen.v" type="file.verilog" enable="1"/>
+        <File path="src/pwm/pwm_prescaler.v" type="file.verilog" enable="1"/>
+        <File path="src/pwm/pwm_register.v" type="file.verilog" enable="1"/>
+        <File path="src/pwm/pwm_top.v" type="file.verilog" enable="1"/>
+        <File path="src/top.v" type="file.verilog" enable="1"/>
+        <File path="src/pwm_i2c.cst" type="file.cst" enable="1"/>
+        <File path="src/pwm_i2c.rao" type="file.gao" enable="1"/>
+    </FileList>
+</Project>

@@ -1,0 +1,57 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\gowin_rpll\I2C_PLL_120Mhz_30Mhz.v'
+Analyzing Verilog file 'E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\i2c\i2c_address_config.v'
+Analyzing Verilog file 'E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\i2c\i2c_frame_bridge.v'
+Analyzing Verilog file 'E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\i2c\i2c_input_filter.v'
+Analyzing Verilog file 'E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\i2c\i2c_slave_interface.v'
+Analyzing Verilog file 'E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\i2c\i2c_start_stop_detect.v'
+Analyzing Verilog file 'E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\i2c\i2c_top.v'
+Analyzing Verilog file 'E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\pwm\pwm_comparator.v'
+Analyzing Verilog file 'E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\pwm\pwm_core.v'
+Analyzing Verilog file 'E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\pwm\pwm_counter.v'
+Analyzing Verilog file 'E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\pwm\pwm_oc.v'
+Analyzing Verilog file 'E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\pwm\pwm_oc_deadtime.v'
+Analyzing Verilog file 'E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\pwm\pwm_oc_refgen.v'
+Analyzing Verilog file 'E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\pwm\pwm_prescaler.v'
+Analyzing Verilog file 'E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\pwm\pwm_register.v'
+Analyzing Verilog file 'E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\pwm\pwm_top.v'
+Analyzing Verilog file 'E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\top.v'
+Compiling module 'top'("E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\top.v":5)
+Compiling module 'I2C_PLL_120Mhz_30Mhz'("E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\gowin_rpll\I2C_PLL_120Mhz_30Mhz.v":10)
+Compiling module 'i2c_top'("E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\i2c\i2c_top.v":1)
+Compiling module 'i2c_input_filter'("E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\i2c\i2c_input_filter.v":12)
+Compiling module 'i2c_address_config'("E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\i2c\i2c_address_config.v":16)
+Compiling module 'i2c_start_stop_detect'("E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\i2c\i2c_start_stop_detect.v":11)
+Compiling module 'i2c_slave_interface'("E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\i2c\i2c_slave_interface.v":11)
+Compiling module 'i2c_frame_bridge'("E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\i2c\i2c_frame_bridge.v":11)
+Compiling module 'pwm_top'("E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\pwm\pwm_top.v":8)
+Compiling module 'pwm_register'("E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\pwm\pwm_register.v":4)
+Compiling module 'pwm_core'("E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\pwm\pwm_core.v":1)
+Compiling module 'pwm_prescaler'("E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\pwm\pwm_prescaler.v":8)
+Compiling module 'pwm_counter'("E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\pwm\pwm_counter.v":9)
+Compiling module 'pwm_comparator'("E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\pwm\pwm_comparator.v":11)
+Compiling module 'pwm_oc'("E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\pwm\pwm_oc.v":7)
+Compiling module 'pwm_oc_refgen'("E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\pwm\pwm_oc_refgen.v":12)
+Compiling module 'pwm_oc_deadtime'("E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\pwm\pwm_oc_deadtime.v":11)
+NOTE  (EX0101) : Current top module is "top"
+[5%] Running netlist conversion ...
+WARN  (CV0016) : Input capture is unused("E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\src\top.v":10)
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\impl\gwsynthesis\pwm_i2c.vg" completed
+[100%] Generate report file "E:\stuff\dh\thiet_ket_vi_mach\do_an_tot_nghiep\verilog\pwm_i2c\impl\gwsynthesis\pwm_i2c_syn.rpt.html" completed
+GowinSynthesis finish

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="top" Lut="4" T_Register="1379(0)" T_Alu="672(0)" T_Lut="1100(4)">
+    <SubModule name="I2C_PLL_120Mhz_30Mhz"/>
+    <SubModule name="u_i2c_top" Lut="1" T_Register="94(0)" T_Lut="96(1)">
+        <SubModule name="u_filter" Register="8" Lut="2" T_Register="8(8)" T_Lut="2(2)"/>
+        <SubModule name="u_i2c_addr_cfg" Register="8" Lut="7" T_Register="8(8)" T_Lut="7(7)"/>
+        <SubModule name="u_start_stop_detect" Register="6" Lut="2" T_Register="6(6)" T_Lut="2(2)"/>
+        <SubModule name="u_slave" Register="25" Lut="59" T_Register="25(25)" T_Lut="59(59)"/>
+        <SubModule name="u_bridge" Register="47" Lut="25" T_Register="47(47)" T_Lut="25(25)"/>
+    </SubModule>
+    <SubModule name="pwm_top_dut" T_Register="1285(0)" T_Alu="672(0)" T_Lut="1000(0)">
+        <SubModule name="u_pwm_register" Register="581" Lut="536" T_Register="581(581)" T_Lut="536(536)"/>
+        <SubModule name="u_pwm_core_1" T_Register="176(0)" T_Alu="168(0)" T_Lut="117(0)">
+            <SubModule name="u_pwm_prescaler" Register="33" Alu="15" Lut="35" T_Register="33(33)" T_Alu="15(15)" T_Lut="35(35)"/>
+            <SubModule name="u_pwm_counter" Register="33" Alu="15" Lut="30" T_Register="33(33)" T_Alu="15(15)" T_Lut="30(30)"/>
+            <SubModule name="u_pwm_comparator_ch1" Register="36" Alu="62" Lut="2" T_Register="36(36)" T_Alu="62(62)" T_Lut="2(2)"/>
+            <SubModule name="u_pwm_oc_ch1" Lut="5" T_Register="19(0)" T_Alu="7(0)" T_Lut="24(5)">
+                <SubModule name="u_oc_ref" Register="2" Lut="4" T_Register="2(2)" T_Lut="4(4)"/>
+                <SubModule name="u_deadtime" Register="17" Alu="7" Lut="15" T_Register="17(17)" T_Alu="7(7)" T_Lut="15(15)"/>
+            </SubModule>
+            <SubModule name="u_pwm_comparator_ch2" Register="36" Alu="62" Lut="2" T_Register="36(36)" T_Alu="62(62)" T_Lut="2(2)"/>
+            <SubModule name="u_pwm_oc_ch2" Lut="5" T_Register="19(0)" T_Alu="7(0)" T_Lut="24(5)">
+                <SubModule name="u_oc_ref" Register="2" Lut="4" T_Register="2(2)" T_Lut="4(4)"/>
+                <SubModule name="u_deadtime" Register="17" Alu="7" Lut="15" T_Register="17(17)" T_Alu="7(7)" T_Lut="15(15)"/>
+            </SubModule>
+        </SubModule>
+        <SubModule name="u_pwm_core_2" T_Register="176(0)" T_Alu="168(0)" T_Lut="116(0)">
+            <SubModule name="u_pwm_prescaler" Register="33" Alu="15" Lut="36" T_Register="33(33)" T_Alu="15(15)" T_Lut="36(36)"/>
+            <SubModule name="u_pwm_counter" Register="33" Alu="15" Lut="28" T_Register="33(33)" T_Alu="15(15)" T_Lut="28(28)"/>
+            <SubModule name="u_pwm_comparator_ch1" Register="36" Alu="62" Lut="2" T_Register="36(36)" T_Alu="62(62)" T_Lut="2(2)"/>
+            <SubModule name="u_pwm_oc_ch1" Lut="5" T_Register="19(0)" T_Alu="7(0)" T_Lut="24(5)">
+                <SubModule name="u_oc_ref" Register="2" Lut="4" T_Register="2(2)" T_Lut="4(4)"/>
+                <SubModule name="u_deadtime" Register="17" Alu="7" Lut="15" T_Register="17(17)" T_Alu="7(7)" T_Lut="15(15)"/>
+            </SubModule>
+            <SubModule name="u_pwm_comparator_ch2" Register="36" Alu="62" Lut="2" T_Register="36(36)" T_Alu="62(62)" T_Lut="2(2)"/>
+            <SubModule name="u_pwm_oc_ch2" Lut="5" T_Register="19(0)" T_Alu="7(0)" T_Lut="24(5)">
+                <SubModule name="u_oc_ref" Register="2" Lut="4" T_Register="2(2)" T_Lut="4(4)"/>
+                <SubModule name="u_deadtime" Register="17" Alu="7" Lut="15" T_Register="17(17)" T_Alu="7(7)" T_Lut="15(15)"/>
+            </SubModule>
+        </SubModule>
+        <SubModule name="u_pwm_core_3" T_Register="176(0)" T_Alu="168(0)" T_Lut="115(0)">
+            <SubModule name="u_pwm_prescaler" Register="33" Alu="15" Lut="35" T_Register="33(33)" T_Alu="15(15)" T_Lut="35(35)"/>
+            <SubModule name="u_pwm_counter" Register="33" Alu="15" Lut="28" T_Register="33(33)" T_Alu="15(15)" T_Lut="28(28)"/>
+            <SubModule name="u_pwm_comparator_ch1" Register="36" Alu="62" Lut="2" T_Register="36(36)" T_Alu="62(62)" T_Lut="2(2)"/>
+            <SubModule name="u_pwm_oc_ch1" Lut="5" T_Register="19(0)" T_Alu="7(0)" T_Lut="24(5)">
+                <SubModule name="u_oc_ref" Register="2" Lut="4" T_Register="2(2)" T_Lut="4(4)"/>
+                <SubModule name="u_deadtime" Register="17" Alu="7" Lut="15" T_Register="17(17)" T_Alu="7(7)" T_Lut="15(15)"/>
+            </SubModule>
+            <SubModule name="u_pwm_comparator_ch2" Register="36" Alu="62" Lut="2" T_Register="36(36)" T_Alu="62(62)" T_Lut="2(2)"/>
+            <SubModule name="u_pwm_oc_ch2" Lut="5" T_Register="19(0)" T_Alu="7(0)" T_Lut="24(5)">
+                <SubModule name="u_oc_ref" Register="2" Lut="4" T_Register="2(2)" T_Lut="4(4)"/>
+                <SubModule name="u_deadtime" Register="17" Alu="7" Lut="15" T_Register="17(17)" T_Alu="7(7)" T_Lut="15(15)"/>
+            </SubModule>
+        </SubModule>
+        <SubModule name="u_pwm_core_4" T_Register="176(0)" T_Alu="168(0)" T_Lut="116(0)">
+            <SubModule name="u_pwm_prescaler" Register="33" Alu="15" Lut="35" T_Register="33(33)" T_Alu="15(15)" T_Lut="35(35)"/>
+            <SubModule name="u_pwm_counter" Register="33" Alu="15" Lut="29" T_Register="33(33)" T_Alu="15(15)" T_Lut="29(29)"/>
+            <SubModule name="u_pwm_comparator_ch1" Register="36" Alu="62" Lut="2" T_Register="36(36)" T_Alu="62(62)" T_Lut="2(2)"/>
+            <SubModule name="u_pwm_oc_ch1" Lut="5" T_Register="19(0)" T_Alu="7(0)" T_Lut="24(5)">
+                <SubModule name="u_oc_ref" Register="2" Lut="4" T_Register="2(2)" T_Lut="4(4)"/>
+                <SubModule name="u_deadtime" Register="17" Alu="7" Lut="15" T_Register="17(17)" T_Alu="7(7)" T_Lut="15(15)"/>
+            </SubModule>
+            <SubModule name="u_pwm_comparator_ch2" Register="36" Alu="62" Lut="2" T_Register="36(36)" T_Alu="62(62)" T_Lut="2(2)"/>
+            <SubModule name="u_pwm_oc_ch2" Lut="5" T_Register="19(0)" T_Alu="7(0)" T_Lut="24(5)">
+                <SubModule name="u_oc_ref" Register="2" Lut="4" T_Register="2(2)" T_Lut="4(4)"/>
+                <SubModule name="u_deadtime" Register="17" Alu="7" Lut="15" T_Register="17(17)" T_Alu="7(7)" T_Lut="15(15)"/>
+            </SubModule>
+        </SubModule>
+    </SubModule>
+</Module>

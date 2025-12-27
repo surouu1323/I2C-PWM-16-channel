@@ -1,0 +1,81 @@
+{
+ "Device" : "GW2AR-18C",
+ "Files" : [
+  {
+   "Path" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/gowin_rpll/I2C_PLL_120Mhz_30Mhz.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/i2c/i2c_address_config.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/i2c/i2c_frame_bridge.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/i2c/i2c_input_filter.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/i2c/i2c_slave_interface.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/i2c/i2c_start_stop_detect.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/i2c/i2c_top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_comparator.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_core.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_counter.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc_deadtime.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_oc_refgen.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_prescaler.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_register.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/pwm/pwm_top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/src/top.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c/impl/temp/rtl_parser.result",
+ "Top" : "top",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}
