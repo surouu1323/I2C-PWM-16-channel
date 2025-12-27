@@ -1,0 +1,452 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+!s11f vlog 2025.2 2025.05, May 31 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 dE:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c_cov/sim
+T_opt
+!i145 1
+!i144 0
+!s110 1766284457
+V9z1fVD124d@lKAEIC`6=<1
+04 2 4 work tb fast 0
+=1-18c04d041ac1-69475ca8-1d1-18ac
+Z3 !s102 +cover=bcesft
+R1
+!s12f OEM100
+!s12b OEM100
+!s124 OEM10U54 
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work +cover=bcesft
+tCvgOpt 0 defaultOptions 1107585188
+n@_opt
+OL;O;2025.2;82
+vi2c_address_config
+Z4 2../src/pwm/pwm_comparator.v|../src/pwm/pwm_core.v|../src/pwm/pwm_counter.v|../src/pwm/pwm_top.v|../src/pwm/pwm_register.v|../src/pwm/pwm_prescaler.v|../src/pwm/pwm_oc.v|../src/pwm/pwm_oc_refgen.v|../src/pwm/pwm_oc_deadtime.v|../src/i2c/i2c_address_config.v|../src/i2c/i2c_frame_bridge.v|../src/i2c/i2c_input_filter.v|../src/i2c/i2c_slave_interface.v|../src/i2c/i2c_start_stop_detect.v|../src/i2c/i2c_top.v|../src/top.v|../tb/tb.v
+Z5 !s110 1766284455
+!i10b 1
+!s100 L?0dR7gjB2:42_neD8]^_3
+IL<UQV?OC;RZ0lMI1g>aif2
+R2
+w1765195425
+8../src/i2c/i2c_address_config.v
+F../src/i2c/i2c_address_config.v
+!i122 6
+L0 16 50
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OL;L;2025.2;82
+r1
+!s85 0
+31
+Z8 !s108 1766284455.000000
+Z9 !s107 ./run_test.v|../tb/i2c_task.v|../tb/tb.v|../src/top.v|../src/i2c/i2c_top.v|../src/i2c/i2c_start_stop_detect.v|../src/i2c/i2c_slave_interface.v|../src/i2c/i2c_input_filter.v|../src/i2c/i2c_frame_bridge.v|../src/i2c/i2c_address_config.v|../src/pwm/pwm_oc_deadtime.v|../src/pwm/pwm_oc_refgen.v|../src/pwm/pwm_oc.v|../src/pwm/pwm_prescaler.v|../src/pwm/pwm_register.v|../src/pwm/pwm_top.v|../src/pwm/pwm_counter.v|../src/pwm/pwm_core.v|../src/pwm/pwm_comparator.v|
+Z10 !s90 +cover=bcesft|+coverexclude=tb|-f|compile.f|
+!i113 0
+R3
+Z11 o+cover=bcesft +coverexclude=tb -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z12 tCvgOpt 0 defaultOptions 1085333592
+vi2c_frame_bridge
+R4
+R5
+!i10b 1
+!s100 DJ:nGL>ZEXV=0n2Ige]Hm2
+I^z=k>][gEz46E3@51V<lE0
+R2
+w1765195493
+8../src/i2c/i2c_frame_bridge.v
+F../src/i2c/i2c_frame_bridge.v
+!i122 6
+L0 11 169
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R3
+R11
+R12
+vi2c_input_filter
+R4
+R5
+!i10b 1
+!s100 INo44S;<3SY`ThJK=E5<i3
+IOWBl315LZ3YYGoIY^g[5a3
+R2
+w1763463443
+8../src/i2c/i2c_input_filter.v
+F../src/i2c/i2c_input_filter.v
+!i122 6
+L0 12 58
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R3
+R11
+R12
+vi2c_slave_interface
+R4
+R5
+!i10b 1
+!s100 1=Z@;CYBnzNaeb[a<Mek;0
+I[kN4_eiUS50TGbYm<i]I;2
+R2
+w1765195488
+8../src/i2c/i2c_slave_interface.v
+F../src/i2c/i2c_slave_interface.v
+!i122 6
+L0 11 208
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R3
+R11
+R12
+vi2c_start_stop_detect
+R4
+R5
+!i10b 1
+!s100 16:=YJFe=IfGCHGQRY:=01
+IaAM[I?c8;69]NAc@Yg1Ef2
+R2
+w1763457222
+8../src/i2c/i2c_start_stop_detect.v
+F../src/i2c/i2c_start_stop_detect.v
+!i122 6
+L0 11 72
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R3
+R11
+R12
+vi2c_top
+R4
+R5
+!i10b 1
+!s100 9J5^]k:7bkidfQCg0zV:M2
+IJ`NkRdGk2z2:E=jm1QZih0
+R2
+w1764755315
+8../src/i2c/i2c_top.v
+F../src/i2c/i2c_top.v
+!i122 6
+L0 1 160
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R3
+R11
+R12
+vpwm_comparator
+R4
+R5
+!i10b 1
+!s100 BmLOj@YVam6XgM[ZKDVAJ3
+I_B^SG_i8Ii@QWVRQZ=WkD0
+R2
+w1763571992
+8../src/pwm/pwm_comparator.v
+F../src/pwm/pwm_comparator.v
+!i122 6
+L0 11 55
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R3
+R11
+R12
+vpwm_core
+R4
+R5
+!i10b 1
+!s100 8P0nXLDRR?zC00CkJIcUS1
+IgRe@P6DHk:o4oAa@CPlke1
+R2
+w1765195367
+8../src/pwm/pwm_core.v
+F../src/pwm/pwm_core.v
+!i122 6
+L0 1 136
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R3
+R11
+R12
+vpwm_counter
+R4
+R5
+!i10b 1
+!s100 79c6LOTWQ;kFnOIaFooXo0
+IXieAm@g8>8gBiO_J192;_0
+R2
+w1765195357
+8../src/pwm/pwm_counter.v
+F../src/pwm/pwm_counter.v
+!i122 6
+L0 9 57
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R3
+R11
+R12
+vpwm_oc
+R4
+R5
+!i10b 1
+!s100 SSnhzP;TW65MSkP1_CTMf3
+IJ>Wjf@g1K<1ac?IHf9Pmk0
+R2
+w1764931021
+8../src/pwm/pwm_oc.v
+F../src/pwm/pwm_oc.v
+!i122 6
+L0 7 107
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R3
+R11
+R12
+vpwm_oc_deadtime
+R4
+R5
+!i10b 1
+!s100 diH_4DiR0_:BD3DV8;YEY1
+IAJe[QQ7^NKf_WzVHL@1U03
+R2
+w1765195205
+8../src/pwm/pwm_oc_deadtime.v
+F../src/pwm/pwm_oc_deadtime.v
+!i122 6
+L0 11 68
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R3
+R11
+R12
+vpwm_oc_refgen
+R4
+R5
+!i10b 1
+!s100 _EXb7JUMo<>jFhJ7K=M5n2
+Id9061BQhKhFU`HKWnaXWg1
+R2
+w1763457917
+8../src/pwm/pwm_oc_refgen.v
+F../src/pwm/pwm_oc_refgen.v
+!i122 6
+L0 12 73
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R3
+R11
+R12
+vpwm_prescaler
+R4
+R5
+!i10b 1
+!s100 JE_zF`kjOFm51a4B3nf8=1
+I>STE;S@7l<CRWKQLV0blz2
+R2
+w1765195386
+8../src/pwm/pwm_prescaler.v
+F../src/pwm/pwm_prescaler.v
+!i122 6
+L0 8 77
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R3
+R11
+R12
+vpwm_register
+R4
+R5
+!i10b 1
+!s100 R7]hS>=a_03`ClG4z`74E1
+IBolgF=hj]@c^7b=KfHZ9z2
+R2
+w1764852156
+8../src/pwm/pwm_register.v
+F../src/pwm/pwm_register.v
+!i122 6
+L0 4 232
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R3
+R11
+R12
+vpwm_top
+R4
+R5
+!i10b 1
+!s100 Jd2gZLNY634Z[nJ?H`N1b1
+IYH_if_df[ZBLIGfh9fU;j1
+R2
+w1764846346
+8../src/pwm/pwm_top.v
+F../src/pwm/pwm_top.v
+!i122 6
+L0 8 273
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R3
+R11
+R12
+vtb
+R4
+R5
+!i10b 1
+!s100 mhl]CIVX36e43?ZdIPMY_3
+I7;VLlA_V__^hYcl>N1SDP3
+R2
+w1766284454
+8../tb/tb.v
+F../tb/tb.v
+F../tb/i2c_task.v
+F./run_test.v
+!i122 6
+L0 3 557
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R3
+R11
+R12
+vtop
+R4
+R5
+!i10b 1
+!s100 CgYJ2ABhfTgRTXXoi1SBh3
+I2MDEWiLKgSSYcR`AGieE52
+R2
+w1764752846
+8../src/top.v
+F../src/top.v
+!i122 6
+L0 5 99
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R3
+R11
+R12

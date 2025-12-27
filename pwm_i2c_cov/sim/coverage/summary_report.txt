@@ -1,0 +1,589 @@
+Coverage Report Summary Data by instance
+
+=================================================================================
+=== Instance: /tb/uut/u_i2c_top/u_filter
+=== Design Unit: work.i2c_input_filter
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         8         8         0   100.00%
+    Statements                      11        11         0   100.00%
+    Toggles                         12        12         0   100.00%
+
+=================================================================================
+=== Instance: /tb/uut/u_i2c_top/u_i2c_addr_cfg
+=== Design Unit: work.i2c_address_config
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         6         6         0   100.00%
+    Conditions                       1         1         0   100.00%
+    Statements                       7         7         0   100.00%
+    Toggles                         22        10        12    45.45%
+
+=================================================================================
+=== Instance: /tb/uut/u_i2c_top/u_start_stop_detect
+=== Design Unit: work.i2c_start_stop_detect
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         8         8         0   100.00%
+    Conditions                       6         6         0   100.00%
+    Expressions                      2         2         0   100.00%
+    Statements                      13        13         0   100.00%
+    Toggles                         12        12         0   100.00%
+
+=================================================================================
+=== Instance: /tb/uut/u_i2c_top/u_slave
+=== Design Unit: work.i2c_slave_interface
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        59        39        20    66.10%
+    Conditions                       5         4         1    80.00%
+    Expressions                      3         2         1    66.66%
+    FSM States                      11         7         4    63.63%
+    FSM Transitions                 32         8        24    25.00%
+    Statements                      42        35         7    83.33%
+    Toggles                         58        56         2    96.55%
+
+=================================================================================
+=== Instance: /tb/uut/u_i2c_top/u_bridge
+=== Design Unit: work.i2c_frame_bridge
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        39        26        13    66.66%
+    Conditions                       2         1         1    50.00%
+    Expressions                      2         1         1    50.00%
+    FSM States                       7         4         3    57.14%
+    FSM Transitions                 13         6         7    46.15%
+    Statements                      37        27        10    72.97%
+    Toggles                        120        60        60    50.00%
+
+=================================================================================
+=== Instance: /tb/uut/u_i2c_top
+=== Design Unit: work.i2c_top
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         2         2         0   100.00%
+    Statements                       1         1         0   100.00%
+    Toggles                         66        36        30    54.54%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_register
+=== Design Unit: work.pwm_register
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        89        25        64    28.08%
+    Statements                     130        68        62    52.30%
+    Toggles                       1064       178       886    16.72%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_1/u_pwm_prescaler
+=== Design Unit: work.pwm_prescaler
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         9         9         0   100.00%
+    Conditions                       2         2         0   100.00%
+    Statements                      15        15         0   100.00%
+    Toggles                         66        66         0   100.00%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_1/u_pwm_counter
+=== Design Unit: work.pwm_counter
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        13        13         0   100.00%
+    Conditions                       3         3         0   100.00%
+    Expressions                      1         1         0   100.00%
+    Statements                      14        14         0   100.00%
+    Toggles                         66        42        24    63.63%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_1/u_pwm_comparator_ch1
+=== Design Unit: work.pwm_comparator
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         6         6         0   100.00%
+    Expressions                      4         4         0   100.00%
+    Statements                      16        16         0   100.00%
+    Toggles                         72        12        60    16.66%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_1/u_pwm_oc_ch1/u_oc_ref
+=== Design Unit: work.pwm_oc_refgen
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        13         9         4    69.23%
+    Statements                      13         9         4    69.23%
+    Toggles                          4         4         0   100.00%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_1/u_pwm_oc_ch1/u_deadtime
+=== Design Unit: work.pwm_oc_deadtime
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         9         9         0   100.00%
+    Conditions                       2         2         0   100.00%
+    Expressions                      4         4         0   100.00%
+    Statements                      13        13         0   100.00%
+    Toggles                         34         6        28    17.64%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_1/u_pwm_oc_ch1
+=== Design Unit: work.pwm_oc
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        16         7         9    43.75%
+    Expressions                      7         3         4    42.85%
+    Statements                      14         8         6    57.14%
+    Toggles                         14        14         0   100.00%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_1/u_pwm_comparator_ch2
+=== Design Unit: work.pwm_comparator
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         6         6         0   100.00%
+    Expressions                      4         4         0   100.00%
+    Statements                      16        16         0   100.00%
+    Toggles                         72         8        64    11.11%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_1/u_pwm_oc_ch2/u_oc_ref
+=== Design Unit: work.pwm_oc_refgen
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        13         9         4    69.23%
+    Statements                      13         9         4    69.23%
+    Toggles                          4         4         0   100.00%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_1/u_pwm_oc_ch2/u_deadtime
+=== Design Unit: work.pwm_oc_deadtime
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         9         8         1    88.88%
+    Conditions                       2         1         1    50.00%
+    Expressions                      4         4         0   100.00%
+    Statements                      13        12         1    92.30%
+    Toggles                         34         4        30    11.76%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_1/u_pwm_oc_ch2
+=== Design Unit: work.pwm_oc
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        16         5        11    31.25%
+    Expressions                      7         1         6    14.28%
+    Statements                      14         6         8    42.85%
+    Toggles                         14         8         6    57.14%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_1
+=== Design Unit: work.pwm_core
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                         60        32        28    53.33%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_2/u_pwm_prescaler
+=== Design Unit: work.pwm_prescaler
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         9         9         0   100.00%
+    Conditions                       2         2         0   100.00%
+    Statements                      15        15         0   100.00%
+    Toggles                         66        50        16    75.75%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_2/u_pwm_counter
+=== Design Unit: work.pwm_counter
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        13        13         0   100.00%
+    Conditions                       3         3         0   100.00%
+    Expressions                      1         1         0   100.00%
+    Statements                      14        14         0   100.00%
+    Toggles                         66        42        24    63.63%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_2/u_pwm_comparator_ch1
+=== Design Unit: work.pwm_comparator
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         6         6         0   100.00%
+    Expressions                      4         4         0   100.00%
+    Statements                      16        16         0   100.00%
+    Toggles                         72        10        62    13.88%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_2/u_pwm_oc_ch1/u_oc_ref
+=== Design Unit: work.pwm_oc_refgen
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        13         9         4    69.23%
+    Statements                      13         9         4    69.23%
+    Toggles                          4         4         0   100.00%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_2/u_pwm_oc_ch1/u_deadtime
+=== Design Unit: work.pwm_oc_deadtime
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         9         9         0   100.00%
+    Conditions                       2         2         0   100.00%
+    Expressions                      4         4         0   100.00%
+    Statements                      13        13         0   100.00%
+    Toggles                         34         5        29    14.70%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_2/u_pwm_oc_ch1
+=== Design Unit: work.pwm_oc
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        16         7         9    43.75%
+    Expressions                      7         3         4    42.85%
+    Statements                      14         8         6    57.14%
+    Toggles                         14        14         0   100.00%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_2/u_pwm_comparator_ch2
+=== Design Unit: work.pwm_comparator
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         6         6         0   100.00%
+    Expressions                      4         4         0   100.00%
+    Statements                      16        16         0   100.00%
+    Toggles                         72         8        64    11.11%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_2/u_pwm_oc_ch2/u_oc_ref
+=== Design Unit: work.pwm_oc_refgen
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        13         9         4    69.23%
+    Statements                      13         9         4    69.23%
+    Toggles                          4         4         0   100.00%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_2/u_pwm_oc_ch2/u_deadtime
+=== Design Unit: work.pwm_oc_deadtime
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         9         8         1    88.88%
+    Conditions                       2         1         1    50.00%
+    Expressions                      4         4         0   100.00%
+    Statements                      13        12         1    92.30%
+    Toggles                         34         3        31     8.82%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_2/u_pwm_oc_ch2
+=== Design Unit: work.pwm_oc
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        16         5        11    31.25%
+    Expressions                      7         1         6    14.28%
+    Statements                      14         6         8    42.85%
+    Toggles                         14         8         6    57.14%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_2
+=== Design Unit: work.pwm_core
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                         60        32        28    53.33%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_3/u_pwm_prescaler
+=== Design Unit: work.pwm_prescaler
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         9         9         0   100.00%
+    Conditions                       2         2         0   100.00%
+    Statements                      15        15         0   100.00%
+    Toggles                         66        50        16    75.75%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_3/u_pwm_counter
+=== Design Unit: work.pwm_counter
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        13        13         0   100.00%
+    Conditions                       3         3         0   100.00%
+    Expressions                      1         1         0   100.00%
+    Statements                      14        14         0   100.00%
+    Toggles                         66        42        24    63.63%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_3/u_pwm_comparator_ch1
+=== Design Unit: work.pwm_comparator
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         6         6         0   100.00%
+    Expressions                      4         4         0   100.00%
+    Statements                      16        16         0   100.00%
+    Toggles                         72        10        62    13.88%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_3/u_pwm_oc_ch1/u_oc_ref
+=== Design Unit: work.pwm_oc_refgen
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        13         9         4    69.23%
+    Statements                      13         9         4    69.23%
+    Toggles                          4         4         0   100.00%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_3/u_pwm_oc_ch1/u_deadtime
+=== Design Unit: work.pwm_oc_deadtime
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         9         9         0   100.00%
+    Conditions                       2         2         0   100.00%
+    Expressions                      4         4         0   100.00%
+    Statements                      13        13         0   100.00%
+    Toggles                         34         5        29    14.70%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_3/u_pwm_oc_ch1
+=== Design Unit: work.pwm_oc
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        16         7         9    43.75%
+    Expressions                      7         3         4    42.85%
+    Statements                      14         8         6    57.14%
+    Toggles                         14        14         0   100.00%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_3/u_pwm_comparator_ch2
+=== Design Unit: work.pwm_comparator
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         6         6         0   100.00%
+    Expressions                      4         4         0   100.00%
+    Statements                      16        16         0   100.00%
+    Toggles                         72         8        64    11.11%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_3/u_pwm_oc_ch2/u_oc_ref
+=== Design Unit: work.pwm_oc_refgen
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        13         9         4    69.23%
+    Statements                      13         9         4    69.23%
+    Toggles                          4         4         0   100.00%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_3/u_pwm_oc_ch2/u_deadtime
+=== Design Unit: work.pwm_oc_deadtime
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         9         8         1    88.88%
+    Conditions                       2         1         1    50.00%
+    Expressions                      4         4         0   100.00%
+    Statements                      13        12         1    92.30%
+    Toggles                         34         3        31     8.82%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_3/u_pwm_oc_ch2
+=== Design Unit: work.pwm_oc
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        16         5        11    31.25%
+    Expressions                      7         1         6    14.28%
+    Statements                      14         6         8    42.85%
+    Toggles                         14         8         6    57.14%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_3
+=== Design Unit: work.pwm_core
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                         60        32        28    53.33%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_4/u_pwm_prescaler
+=== Design Unit: work.pwm_prescaler
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         9         9         0   100.00%
+    Conditions                       2         2         0   100.00%
+    Statements                      15        15         0   100.00%
+    Toggles                         66        50        16    75.75%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_4/u_pwm_counter
+=== Design Unit: work.pwm_counter
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        13        13         0   100.00%
+    Conditions                       3         3         0   100.00%
+    Expressions                      1         1         0   100.00%
+    Statements                      14        14         0   100.00%
+    Toggles                         66        42        24    63.63%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_4/u_pwm_comparator_ch1
+=== Design Unit: work.pwm_comparator
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         6         6         0   100.00%
+    Expressions                      4         4         0   100.00%
+    Statements                      16        16         0   100.00%
+    Toggles                         72        10        62    13.88%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_4/u_pwm_oc_ch1/u_oc_ref
+=== Design Unit: work.pwm_oc_refgen
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        13         9         4    69.23%
+    Statements                      13         9         4    69.23%
+    Toggles                          4         4         0   100.00%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_4/u_pwm_oc_ch1/u_deadtime
+=== Design Unit: work.pwm_oc_deadtime
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         9         9         0   100.00%
+    Conditions                       2         2         0   100.00%
+    Expressions                      4         4         0   100.00%
+    Statements                      13        13         0   100.00%
+    Toggles                         34         5        29    14.70%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_4/u_pwm_oc_ch1
+=== Design Unit: work.pwm_oc
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        16         7         9    43.75%
+    Expressions                      7         3         4    42.85%
+    Statements                      14         8         6    57.14%
+    Toggles                         14        14         0   100.00%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_4/u_pwm_comparator_ch2
+=== Design Unit: work.pwm_comparator
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         6         6         0   100.00%
+    Expressions                      4         4         0   100.00%
+    Statements                      16        16         0   100.00%
+    Toggles                         72         8        64    11.11%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_4/u_pwm_oc_ch2/u_oc_ref
+=== Design Unit: work.pwm_oc_refgen
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        13         9         4    69.23%
+    Statements                      13         9         4    69.23%
+    Toggles                          4         4         0   100.00%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_4/u_pwm_oc_ch2/u_deadtime
+=== Design Unit: work.pwm_oc_deadtime
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         9         8         1    88.88%
+    Conditions                       2         1         1    50.00%
+    Expressions                      4         4         0   100.00%
+    Statements                      13        12         1    92.30%
+    Toggles                         34         3        31     8.82%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_4/u_pwm_oc_ch2
+=== Design Unit: work.pwm_oc
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        16         5        11    31.25%
+    Expressions                      7         1         6    14.28%
+    Statements                      14         6         8    42.85%
+    Toggles                         14         8         6    57.14%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut/u_pwm_core_4
+=== Design Unit: work.pwm_core
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                         60        32        28    53.33%
+
+=================================================================================
+=== Instance: /tb/uut/pwm_top_dut
+=== Design Unit: work.pwm_top
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                       1032       178       854    17.24%
+
+=================================================================================
+=== Instance: /tb/uut
+=== Design Unit: work.top
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                         86        46        40    53.48%
+
+=================================================================================
+=== Instance: /tb
+=== Design Unit: work.tb
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        76        38        38    50.00%
+    Conditions                       2         0         2     0.00%
+    Statements                     435       337        98    77.47%
+    Toggles                        136        34       102    25.00%
+
+
+Total Coverage By Instance (filtered view): 59.96%
+

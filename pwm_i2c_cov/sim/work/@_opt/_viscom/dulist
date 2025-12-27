@@ -1,0 +1,17 @@
+2 16 i2c_input_filter 4 fast 75 E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c_cov/sim/work 0 0 0 0 73 0
+2 18 i2c_address_config 4 fast 75 E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c_cov/sim/work 0 0 0 0 46 0
+2 21 i2c_start_stop_detect 4 fast 75 E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c_cov/sim/work 0 0 0 0 91 0
+2 19 i2c_slave_interface 4 fast 75 E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c_cov/sim/work 0 0 131072 0 248 0
+2 16 i2c_frame_bridge 4 fast 75 E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c_cov/sim/work 0 0 0 0 215 0
+2 7 i2c_top 4 fast 75 E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c_cov/sim/work 0 0 131072 0 768 0
+2 12 pwm_register 4 fast 75 E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c_cov/sim/work 0 0 131072 0 648 0
+2 13 pwm_prescaler 4 fast 75 E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c_cov/sim/work 0 0 0 0 91 0
+2 11 pwm_counter 4 fast 75 E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c_cov/sim/work 0 0 0 0 102 0
+2 14 pwm_comparator 4 fast 75 E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c_cov/sim/work 0 0 131072 0 99 0
+2 13 pwm_oc_refgen 4 fast 75 E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c_cov/sim/work 0 0 0 0 72 0
+2 15 pwm_oc_deadtime 4 fast 75 E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c_cov/sim/work 0 0 0 0 91 0
+2 6 pwm_oc 4 fast 75 E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c_cov/sim/work 0 0 0 0 281 0
+2 8 pwm_core 4 fast 75 E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c_cov/sim/work 0 0 262144 0 1103 0
+2 7 pwm_top 4 fast 75 E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c_cov/sim/work 0 0 1179648 0 5310 0
+2 3 top 4 fast 75 E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c_cov/sim/work 0 0 1310720 0 6165 0
+1 2 tb 4 fast 75 E:/stuff/dh/thiet_ket_vi_mach/do_an_tot_nghiep/verilog/pwm_i2c_cov/sim/work 0 0 1622016 0 7527 0

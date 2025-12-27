@@ -1,0 +1,16 @@
+../src/pwm/pwm_comparator.v
+../src/pwm/pwm_core.v
+../src/pwm/pwm_counter.v
+../src/pwm/pwm_top.v
+../src/pwm/pwm_register.v
+../src/pwm/pwm_prescaler.v
+../src/pwm/pwm_oc.v
+../src/pwm/pwm_oc_refgen.v
+../src/pwm/pwm_oc_deadtime.v
+../src/i2c/i2c_address_config.v
+../src/i2c/i2c_frame_bridge.v
+../src/i2c/i2c_input_filter.v
+../src/i2c/i2c_slave_interface.v
+../src/i2c/i2c_start_stop_detect.v
+../src/i2c/i2c_top.v
+../src/top.v

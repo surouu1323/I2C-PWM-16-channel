@@ -1,0 +1,56 @@
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim -debugDB -l default.log -voptargs="+acc" -assertdebug -c tb -do "log -r /*;run -all;" 
+# Start time: 16:39:26 on Dec 03,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-8611) Generating debug db.
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'modelsim.ini' is used as the ini file.
+# ** Warning: ../tb/tb.v(38): (vopt-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 23, found 22.
+# ** Warning: ../tb/tb.v(38): (vopt-2718) [TFMPC] - Missing connection for port 'capture'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.2 win64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.tb(fast)
+# Loading work.top(fast)
+# Loading work.i2c_top(fast)
+# Loading work.i2c_input_filter(fast)
+# Loading work.i2c_address_config(fast)
+# Loading work.i2c_start_stop_detect(fast)
+# Loading work.i2c_slave_interface(fast)
+# Loading work.i2c_frame_bridge(fast)
+# Loading work.pwm_top(fast)
+# Loading work.pwm_register(fast)
+# Loading work.pwm_core(fast)
+# Loading work.pwm_prescaler(fast)
+# Loading work.pwm_counter(fast)
+# Loading work.pwm_comparator(fast)
+# Loading work.pwm_oc(fast)
+# Loading work.pwm_oc_refgen(fast)
+# Loading work.pwm_oc_deadtime(fast)
+# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
+# log -r /*
+# run -all
+# run test
+# === SLAVE WRITE ===
+# ACK: Slave respone
+# === SLAVE READ  ===
+# ACK: Slave respone
+# PASS: rdata match, expect : 0102, recive : 0102
+# test_case_1
+# Test_result PASSED
+# ** Note: $finish    : ../tb/tb.v(127)
+#    Time: 225 us  Iteration: 0  Instance: /tb
+# End time: 16:39:28 on Dec 03,2025, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 3

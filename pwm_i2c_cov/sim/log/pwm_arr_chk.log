@@ -1,0 +1,84 @@
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim -coverage -l pwm_arr_chk.log -c tb -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit ./ucdb/pwm_arr_chk.ucdb; log -r /*;run -all" 
+# Start time: 09:33:37 on Dec 21,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-220) 'modelsim.ini' is used as the ini file.
+# ** Note: (vopt-143) Recognized 1 FSM in module "i2c_slave_interface(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "i2c_frame_bridge(fast)".
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.2 win64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.tb(fast)
+# coverage save -onexit ./ucdb/pwm_arr_chk.ucdb
+#  log -r /*
+# run -all
+# run test
+# 
+# ===============================================
+# ==               Auto-Reload CHECK           ==
+# ===============================================
+# [WRITE ] addr = 0x  1 | data = 0x0
+# [WRITE ] addr = 0x  3 | data = 0x0
+# [WRITE ] addr = 0x  5 | data = 0x0
+# [WRITE ] addr = 0x  7 | data = 0x0
+# [WRITE ] addr = 0x 10 | data = 0x1
+# [WRITE ] addr = 0x 13 | data = 0x14
+# [WRITE ] addr = 0x 18 | data = 0x1
+# [WRITE ] addr = 0x 21 | data = 0x14
+# [WRITE ] addr = 0x 26 | data = 0x1
+# [WRITE ] addr = 0x 29 | data = 0x14
+# [WRITE ] addr = 0x 34 | data = 0x1
+# [WRITE ] addr = 0x 37 | data = 0x14
+# [WRITE ] addr = 0x  0 | data = 0xf
+# ------------------- PWM CORE 1 ----------------
+# 
+# --------------------- AAR = 9 -----------------
+# [WRITE ] addr = 0x  2 | data = 0x9
+# [PASS ] AAR = 9
+# ------------------- AAR = 65535 ---------------
+# [WRITE ] addr = 0x  2 | data = 0xffff
+# [PASS ] AAR = 9
+# ------------------- PWM CORE 2 ----------------
+# 
+# --------------------- AAR = 9 -----------------
+# [WRITE ] addr = 0x  4 | data = 0x9
+# [PASS ] AAR = 9
+# ------------------- AAR = 65535 ---------------
+# [WRITE ] addr = 0x  4 | data = 0xffff
+# [PASS ] AAR = 9
+# ------------------- PWM CORE 3 ----------------
+# 
+# --------------------- AAR = 9 -----------------
+# [WRITE ] addr = 0x  6 | data = 0x9
+# [PASS ] AAR = 9
+# ------------------- AAR = 65535 ---------------
+# [WRITE ] addr = 0x  6 | data = 0xffff
+# [PASS ] AAR = 9
+# ------------------- PWM CORE 4 ----------------
+# 
+# --------------------- AAR = 9 -----------------
+# [WRITE ] addr = 0x  8 | data = 0x9
+# [PASS ] AAR = 9
+# ------------------- AAR = 65535 ---------------
+# [WRITE ] addr = 0x  8 | data = 0xffff
+# [PASS ] AAR = 9
+# -----------------------------------------------
+# TEST RESULT: PASSED
+# -----------------------------------------------
+# 
+# ** Note: $finish    : ../tb/tb.v(124)
+#    Time: 8920616 ns  Iteration: 0  Instance: /tb
+# Saving coverage database on exit...
+# End time: 09:34:14 on Dec 21,2025, Elapsed time: 0:00:37
+# Errors: 0, Warnings: 0

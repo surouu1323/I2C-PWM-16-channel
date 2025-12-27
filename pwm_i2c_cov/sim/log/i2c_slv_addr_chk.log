@@ -1,0 +1,167 @@
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim -coverage -l i2c_slv_addr_chk.log -c tb -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit ./ucdb/i2c_slv_addr_chk.ucdb; log -r /*;run -all" 
+# Start time: 09:29:10 on Dec 21,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-220) 'modelsim.ini' is used as the ini file.
+# ** Note: (vopt-143) Recognized 1 FSM in module "i2c_slave_interface(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "i2c_frame_bridge(fast)".
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.2 win64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.tb(fast)
+# coverage save -onexit ./ucdb/i2c_slv_addr_chk.ucdb
+#  log -r /*
+# run -all
+# run test
+# 
+# ===============================================
+# ==          I2C SLAVE ADDRESS CHECK          ==
+# ===============================================
+# [CHK ] Slave_addr = 0x0 | I2C_Call_addr = 0x50
+# [PASS  ] ACK: Slave respone
+# [CHK ] Slave_addr = 0x0 | I2C_Call_addr = 0x51
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x0 | I2C_Call_addr = 0x52
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x0 | I2C_Call_addr = 0x53
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x0 | I2C_Call_addr = 0x54
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x0 | I2C_Call_addr = 0x55
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x0 | I2C_Call_addr = 0x56
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x0 | I2C_Call_addr = 0x57
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x1 | I2C_Call_addr = 0x50
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x1 | I2C_Call_addr = 0x51
+# [PASS  ] ACK: Slave respone
+# [CHK ] Slave_addr = 0x1 | I2C_Call_addr = 0x52
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x1 | I2C_Call_addr = 0x53
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x1 | I2C_Call_addr = 0x54
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x1 | I2C_Call_addr = 0x55
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x1 | I2C_Call_addr = 0x56
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x1 | I2C_Call_addr = 0x57
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x2 | I2C_Call_addr = 0x50
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x2 | I2C_Call_addr = 0x51
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x2 | I2C_Call_addr = 0x52
+# [PASS  ] ACK: Slave respone
+# [CHK ] Slave_addr = 0x2 | I2C_Call_addr = 0x53
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x2 | I2C_Call_addr = 0x54
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x2 | I2C_Call_addr = 0x55
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x2 | I2C_Call_addr = 0x56
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x2 | I2C_Call_addr = 0x57
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x3 | I2C_Call_addr = 0x50
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x3 | I2C_Call_addr = 0x51
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x3 | I2C_Call_addr = 0x52
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x3 | I2C_Call_addr = 0x53
+# [PASS  ] ACK: Slave respone
+# [CHK ] Slave_addr = 0x3 | I2C_Call_addr = 0x54
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x3 | I2C_Call_addr = 0x55
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x3 | I2C_Call_addr = 0x56
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x3 | I2C_Call_addr = 0x57
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x4 | I2C_Call_addr = 0x50
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x4 | I2C_Call_addr = 0x51
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x4 | I2C_Call_addr = 0x52
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x4 | I2C_Call_addr = 0x53
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x4 | I2C_Call_addr = 0x54
+# [PASS  ] ACK: Slave respone
+# [CHK ] Slave_addr = 0x4 | I2C_Call_addr = 0x55
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x4 | I2C_Call_addr = 0x56
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x4 | I2C_Call_addr = 0x57
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x5 | I2C_Call_addr = 0x50
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x5 | I2C_Call_addr = 0x51
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x5 | I2C_Call_addr = 0x52
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x5 | I2C_Call_addr = 0x53
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x5 | I2C_Call_addr = 0x54
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x5 | I2C_Call_addr = 0x55
+# [PASS  ] ACK: Slave respone
+# [CHK ] Slave_addr = 0x5 | I2C_Call_addr = 0x56
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x5 | I2C_Call_addr = 0x57
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x6 | I2C_Call_addr = 0x50
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x6 | I2C_Call_addr = 0x51
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x6 | I2C_Call_addr = 0x52
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x6 | I2C_Call_addr = 0x53
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x6 | I2C_Call_addr = 0x54
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x6 | I2C_Call_addr = 0x55
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x6 | I2C_Call_addr = 0x56
+# [PASS  ] ACK: Slave respone
+# [CHK ] Slave_addr = 0x6 | I2C_Call_addr = 0x57
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x7 | I2C_Call_addr = 0x50
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x7 | I2C_Call_addr = 0x51
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x7 | I2C_Call_addr = 0x52
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x7 | I2C_Call_addr = 0x53
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x7 | I2C_Call_addr = 0x54
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x7 | I2C_Call_addr = 0x55
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x7 | I2C_Call_addr = 0x56
+# [PASS  ] NACK: Slave not respone
+# [CHK ] Slave_addr = 0x7 | I2C_Call_addr = 0x57
+# [PASS  ] ACK: Slave respone
+# -----------------------------------------------
+# TEST RESULT: PASSED
+# -----------------------------------------------
+# 
+# ** Note: $finish    : ../tb/tb.v(124)
+#    Time: 1280500 ns  Iteration: 2  Instance: /tb
+# Saving coverage database on exit...
+# End time: 09:29:12 on Dec 21,2025, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

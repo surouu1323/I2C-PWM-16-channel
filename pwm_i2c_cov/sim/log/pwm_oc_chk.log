@@ -1,0 +1,307 @@
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim -coverage -l pwm_oc_chk.log -c tb -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit ./ucdb/pwm_oc_chk.ucdb; log -r /*;run -all" 
+# Start time: 09:33:08 on Dec 21,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-220) 'modelsim.ini' is used as the ini file.
+# ** Note: (vopt-143) Recognized 1 FSM in module "i2c_slave_interface(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "i2c_frame_bridge(fast)".
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.2 win64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.tb(fast)
+# coverage save -onexit ./ucdb/pwm_oc_chk.ucdb
+#  log -r /*
+# run -all
+# run test
+# 
+# ===============================================
+# ==                 PWM OC CHECK              ==
+# ===============================================
+# ------------------- PWM CORE 1 ----------------
+# 
+# ------------- oc_sel = 0, oc_pol = 0 ----------
+# [WRITE ] addr = 0x 13 | data = 0x0
+# [PASS ] tb.pwm_ch1_a_o = 0
+# [PASS ] tb.pwm_ch1_b_o = 0
+# 
+# ------------- oc_sel = 0, oc_pol = 1 ----------
+# [WRITE ] addr = 0x 13 | data = 0xc0
+# [PASS ] tb.pwm_ch1_a_o = 1
+# [PASS ] tb.pwm_ch1_b_o = 1
+# 
+# -------- dtg_sel = 0, oc_sel = 10, oc_pol = 0 --------
+# [WRITE ] addr = 0x 13 | data = 0x28
+# [WRITE ] addr = 0x  0 | data = 0x0
+# [WRITE ] addr = 0x  1 | data = 0x0
+# [WRITE ] addr = 0x  2 | data = 0x2
+# [WRITE ] addr = 0x 10 | data = 0x0
+# [WRITE ] addr = 0x 11 | data = 0x3
+# [WRITE ] addr = 0x  0 | data = 0xf
+# [PASS ] tb.pwm_ch1_a_o = 0
+# [PASS ] tb.pwm_ch1_b_o = 0
+# 
+# -------- dtg_sel = 1, oc_sel = 10, oc_pol = 0 --------
+# [WRITE ] addr = 0x 13 | data = 0x2a
+# [WRITE ] addr = 0x  0 | data = 0x0
+# [WRITE ] addr = 0x  1 | data = 0x0
+# [WRITE ] addr = 0x  2 | data = 0x2
+# [WRITE ] addr = 0x 10 | data = 0x0
+# [WRITE ] addr = 0x 11 | data = 0x3
+# [WRITE ] addr = 0x  0 | data = 0xf
+# [PASS ] tb.pwm_ch1_a_o = 1
+# [PASS ] tb.pwm_ch1_b_o = 1
+# 
+# -------- dtg_sel = 0, oc_sel = 11, oc_pol = 0 --------
+# [WRITE ] addr = 0x 13 | data = 0x3c
+# [WRITE ] addr = 0x  0 | data = 0x0
+# [WRITE ] addr = 0x  1 | data = 0x0
+# [WRITE ] addr = 0x  2 | data = 0x6
+# [WRITE ] addr = 0x 10 | data = 0x2
+# [WRITE ] addr = 0x 12 | data = 0x0
+# [WRITE ] addr = 0x  0 | data = 0xf
+# [PASS ] tb.pwm_ch1_a_o = 1
+# [PASS ] tb.pwm_ch1_b_o = 1
+# 
+# -------- dtg_sel = 255, oc_sel = 11, oc_pol = 0 --------
+# [WRITE ] addr = 0x 13 | data = 0x3c
+# [WRITE ] addr = 0x  0 | data = 0x0
+# [WRITE ] addr = 0x  1 | data = 0x0
+# [WRITE ] addr = 0x  2 | data = 0x400
+# [WRITE ] addr = 0x 10 | data = 0x200
+# [WRITE ] addr = 0x 12 | data = 0xff
+# [WRITE ] addr = 0x  0 | data = 0xf
+# [PASS ] tb.pwm_ch1_a_o = 1
+# [PASS ] tb.pwm_ch1_b_o = 1
+# 
+# -------- oc_mode = 1, oc_sel = 01, oc_pol = 0 --------
+# [WRITE ] addr = 0x 13 | data = 0x15
+# [WRITE ] addr = 0x  0 | data = 0x0
+# [WRITE ] addr = 0x  1 | data = 0x0
+# [WRITE ] addr = 0x  2 | data = 0x2
+# [WRITE ] addr = 0x 10 | data = 0x0
+# [WRITE ] addr = 0x 11 | data = 0x3
+# [WRITE ] addr = 0x 12 | data = 0x0
+# [WRITE ] addr = 0x  0 | data = 0xf
+# [PASS ] tb.pwm_ch1_a_o = 1
+# [PASS ] tb.pwm_ch1_b_o = 0
+# ------------------- PWM CORE 2 ----------------
+# 
+# ------------- oc_sel = 0, oc_pol = 0 ----------
+# [WRITE ] addr = 0x 21 | data = 0x0
+# [PASS ] tb.pwm_ch3_a_o = 0
+# [PASS ] tb.pwm_ch3_b_o = 0
+# 
+# ------------- oc_sel = 0, oc_pol = 1 ----------
+# [WRITE ] addr = 0x 21 | data = 0xc0
+# [PASS ] tb.pwm_ch3_a_o = 1
+# [PASS ] tb.pwm_ch3_b_o = 1
+# 
+# -------- dtg_sel = 0, oc_sel = 10, oc_pol = 0 --------
+# [WRITE ] addr = 0x 21 | data = 0x28
+# [WRITE ] addr = 0x  0 | data = 0x0
+# [WRITE ] addr = 0x  3 | data = 0x0
+# [WRITE ] addr = 0x  4 | data = 0x2
+# [WRITE ] addr = 0x 18 | data = 0x0
+# [WRITE ] addr = 0x 19 | data = 0x3
+# [WRITE ] addr = 0x  0 | data = 0xf
+# [PASS ] tb.pwm_ch3_a_o = 0
+# [PASS ] tb.pwm_ch3_b_o = 0
+# 
+# -------- dtg_sel = 1, oc_sel = 10, oc_pol = 0 --------
+# [WRITE ] addr = 0x 21 | data = 0x2a
+# [WRITE ] addr = 0x  0 | data = 0x0
+# [WRITE ] addr = 0x  3 | data = 0x0
+# [WRITE ] addr = 0x  4 | data = 0x2
+# [WRITE ] addr = 0x 18 | data = 0x0
+# [WRITE ] addr = 0x 19 | data = 0x3
+# [WRITE ] addr = 0x  0 | data = 0xf
+# [PASS ] tb.pwm_ch3_a_o = 1
+# [PASS ] tb.pwm_ch3_b_o = 1
+# 
+# -------- dtg_sel = 0, oc_sel = 11, oc_pol = 0 --------
+# [WRITE ] addr = 0x 21 | data = 0x3c
+# [WRITE ] addr = 0x  0 | data = 0x0
+# [WRITE ] addr = 0x  3 | data = 0x0
+# [WRITE ] addr = 0x  4 | data = 0x6
+# [WRITE ] addr = 0x 18 | data = 0x2
+# [WRITE ] addr = 0x 20 | data = 0x0
+# [WRITE ] addr = 0x  0 | data = 0xf
+# [PASS ] tb.pwm_ch3_a_o = 1
+# [PASS ] tb.pwm_ch3_b_o = 1
+# 
+# -------- dtg_sel = 255, oc_sel = 11, oc_pol = 0 --------
+# [WRITE ] addr = 0x 21 | data = 0x3c
+# [WRITE ] addr = 0x  0 | data = 0x0
+# [WRITE ] addr = 0x  3 | data = 0x0
+# [WRITE ] addr = 0x  4 | data = 0x400
+# [WRITE ] addr = 0x 18 | data = 0x200
+# [WRITE ] addr = 0x 20 | data = 0xff
+# [WRITE ] addr = 0x  0 | data = 0xf
+# [PASS ] tb.pwm_ch3_a_o = 1
+# [PASS ] tb.pwm_ch3_b_o = 1
+# 
+# -------- oc_mode = 1, oc_sel = 01, oc_pol = 0 --------
+# [WRITE ] addr = 0x 21 | data = 0x15
+# [WRITE ] addr = 0x  0 | data = 0x0
+# [WRITE ] addr = 0x  3 | data = 0x0
+# [WRITE ] addr = 0x  4 | data = 0x2
+# [WRITE ] addr = 0x 18 | data = 0x0
+# [WRITE ] addr = 0x 19 | data = 0x3
+# [WRITE ] addr = 0x 20 | data = 0x0
+# [WRITE ] addr = 0x  0 | data = 0xf
+# [PASS ] tb.pwm_ch3_a_o = 1
+# [PASS ] tb.pwm_ch3_b_o = 0
+# ------------------- PWM CORE 3 ----------------
+# 
+# ------------- oc_sel = 0, oc_pol = 0 ----------
+# [WRITE ] addr = 0x 29 | data = 0x0
+# [PASS ] tb.pwm_ch5_a_o = 0
+# [PASS ] tb.pwm_ch5_b_o = 0
+# 
+# ------------- oc_sel = 0, oc_pol = 1 ----------
+# [WRITE ] addr = 0x 29 | data = 0xc0
+# [PASS ] tb.pwm_ch5_a_o = 1
+# [PASS ] tb.pwm_ch5_b_o = 1
+# 
+# -------- dtg_sel = 0, oc_sel = 10, oc_pol = 0 --------
+# [WRITE ] addr = 0x 29 | data = 0x28
+# [WRITE ] addr = 0x  0 | data = 0x0
+# [WRITE ] addr = 0x  5 | data = 0x0
+# [WRITE ] addr = 0x  6 | data = 0x2
+# [WRITE ] addr = 0x 26 | data = 0x0
+# [WRITE ] addr = 0x 27 | data = 0x3
+# [WRITE ] addr = 0x  0 | data = 0xf
+# [PASS ] tb.pwm_ch5_a_o = 0
+# [PASS ] tb.pwm_ch5_b_o = 0
+# 
+# -------- dtg_sel = 1, oc_sel = 10, oc_pol = 0 --------
+# [WRITE ] addr = 0x 29 | data = 0x2a
+# [WRITE ] addr = 0x  0 | data = 0x0
+# [WRITE ] addr = 0x  5 | data = 0x0
+# [WRITE ] addr = 0x  6 | data = 0x2
+# [WRITE ] addr = 0x 26 | data = 0x0
+# [WRITE ] addr = 0x 27 | data = 0x3
+# [WRITE ] addr = 0x  0 | data = 0xf
+# [PASS ] tb.pwm_ch5_a_o = 1
+# [PASS ] tb.pwm_ch5_b_o = 1
+# 
+# -------- dtg_sel = 0, oc_sel = 11, oc_pol = 0 --------
+# [WRITE ] addr = 0x 29 | data = 0x3c
+# [WRITE ] addr = 0x  0 | data = 0x0
+# [WRITE ] addr = 0x  5 | data = 0x0
+# [WRITE ] addr = 0x  6 | data = 0x6
+# [WRITE ] addr = 0x 26 | data = 0x2
+# [WRITE ] addr = 0x 28 | data = 0x0
+# [WRITE ] addr = 0x  0 | data = 0xf
+# [PASS ] tb.pwm_ch5_a_o = 1
+# [PASS ] tb.pwm_ch5_b_o = 1
+# 
+# -------- dtg_sel = 255, oc_sel = 11, oc_pol = 0 --------
+# [WRITE ] addr = 0x 29 | data = 0x3c
+# [WRITE ] addr = 0x  0 | data = 0x0
+# [WRITE ] addr = 0x  5 | data = 0x0
+# [WRITE ] addr = 0x  6 | data = 0x400
+# [WRITE ] addr = 0x 26 | data = 0x200
+# [WRITE ] addr = 0x 28 | data = 0xff
+# [WRITE ] addr = 0x  0 | data = 0xf
+# [PASS ] tb.pwm_ch5_a_o = 1
+# [PASS ] tb.pwm_ch5_b_o = 1
+# 
+# -------- oc_mode = 1, oc_sel = 01, oc_pol = 0 --------
+# [WRITE ] addr = 0x 29 | data = 0x15
+# [WRITE ] addr = 0x  0 | data = 0x0
+# [WRITE ] addr = 0x  5 | data = 0x0
+# [WRITE ] addr = 0x  6 | data = 0x2
+# [WRITE ] addr = 0x 26 | data = 0x0
+# [WRITE ] addr = 0x 27 | data = 0x3
+# [WRITE ] addr = 0x 28 | data = 0x0
+# [WRITE ] addr = 0x  0 | data = 0xf
+# [PASS ] tb.pwm_ch5_a_o = 1
+# [PASS ] tb.pwm_ch5_b_o = 0
+# ------------------- PWM CORE 4 ----------------
+# 
+# ------------- oc_sel = 0, oc_pol = 0 ----------
+# [WRITE ] addr = 0x 37 | data = 0x0
+# [PASS ] tb.pwm_ch7_a_o = 0
+# [PASS ] tb.pwm_ch7_b_o = 0
+# 
+# ------------- oc_sel = 0, oc_pol = 1 ----------
+# [WRITE ] addr = 0x 37 | data = 0xc0
+# [PASS ] tb.pwm_ch7_a_o = 1
+# [PASS ] tb.pwm_ch7_b_o = 1
+# 
+# -------- dtg_sel = 0, oc_sel = 10, oc_pol = 0 --------
+# [WRITE ] addr = 0x 37 | data = 0x28
+# [WRITE ] addr = 0x  0 | data = 0x0
+# [WRITE ] addr = 0x  7 | data = 0x0
+# [WRITE ] addr = 0x  8 | data = 0x2
+# [WRITE ] addr = 0x 34 | data = 0x0
+# [WRITE ] addr = 0x 35 | data = 0x3
+# [WRITE ] addr = 0x  0 | data = 0xf
+# [PASS ] tb.pwm_ch7_a_o = 0
+# [PASS ] tb.pwm_ch7_b_o = 0
+# 
+# -------- dtg_sel = 1, oc_sel = 10, oc_pol = 0 --------
+# [WRITE ] addr = 0x 37 | data = 0x2a
+# [WRITE ] addr = 0x  0 | data = 0x0
+# [WRITE ] addr = 0x  7 | data = 0x0
+# [WRITE ] addr = 0x  8 | data = 0x2
+# [WRITE ] addr = 0x 34 | data = 0x0
+# [WRITE ] addr = 0x 35 | data = 0x3
+# [WRITE ] addr = 0x  0 | data = 0xf
+# [PASS ] tb.pwm_ch7_a_o = 1
+# [PASS ] tb.pwm_ch7_b_o = 1
+# 
+# -------- dtg_sel = 0, oc_sel = 11, oc_pol = 0 --------
+# [WRITE ] addr = 0x 37 | data = 0x3c
+# [WRITE ] addr = 0x  0 | data = 0x0
+# [WRITE ] addr = 0x  7 | data = 0x0
+# [WRITE ] addr = 0x  8 | data = 0x6
+# [WRITE ] addr = 0x 34 | data = 0x2
+# [WRITE ] addr = 0x 36 | data = 0x0
+# [WRITE ] addr = 0x  0 | data = 0xf
+# [PASS ] tb.pwm_ch7_a_o = 1
+# [PASS ] tb.pwm_ch7_b_o = 1
+# 
+# -------- dtg_sel = 255, oc_sel = 11, oc_pol = 0 --------
+# [WRITE ] addr = 0x 37 | data = 0x3c
+# [WRITE ] addr = 0x  0 | data = 0x0
+# [WRITE ] addr = 0x  7 | data = 0x0
+# [WRITE ] addr = 0x  8 | data = 0x400
+# [WRITE ] addr = 0x 34 | data = 0x200
+# [WRITE ] addr = 0x 36 | data = 0xff
+# [WRITE ] addr = 0x  0 | data = 0xf
+# [PASS ] tb.pwm_ch7_a_o = 1
+# [PASS ] tb.pwm_ch7_b_o = 1
+# 
+# -------- oc_mode = 1, oc_sel = 01, oc_pol = 0 --------
+# [WRITE ] addr = 0x 37 | data = 0x15
+# [WRITE ] addr = 0x  0 | data = 0x0
+# [WRITE ] addr = 0x  7 | data = 0x0
+# [WRITE ] addr = 0x  8 | data = 0x2
+# [WRITE ] addr = 0x 34 | data = 0x0
+# [WRITE ] addr = 0x 35 | data = 0x3
+# [WRITE ] addr = 0x 36 | data = 0x0
+# [WRITE ] addr = 0x  0 | data = 0xf
+# [PASS ] tb.pwm_ch7_a_o = 1
+# [PASS ] tb.pwm_ch7_b_o = 0
+# -----------------------------------------------
+# TEST RESULT: PASSED
+# -----------------------------------------------
+# 
+# ** Note: $finish    : ../tb/tb.v(124)
+#    Time: 11604116 ns  Iteration: 0  Instance: /tb
+# Saving coverage database on exit...
+# End time: 09:33:35 on Dec 21,2025, Elapsed time: 0:00:27
+# Errors: 0, Warnings: 0

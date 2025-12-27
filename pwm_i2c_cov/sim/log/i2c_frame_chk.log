@@ -1,0 +1,69 @@
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim -coverage -l i2c_frame_chk.log -c tb -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit ./ucdb/i2c_frame_chk.ucdb; log -r /*;run -all" 
+# Start time: 09:28:59 on Dec 21,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-220) 'modelsim.ini' is used as the ini file.
+# ** Note: (vopt-143) Recognized 1 FSM in module "i2c_slave_interface(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "i2c_frame_bridge(fast)".
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.2 win64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.tb(fast)
+# coverage save -onexit ./ucdb/i2c_frame_chk.ucdb
+#  log -r /*
+# run -all
+# run test
+# 
+# ===============================================
+# ==               I2C FRAME CHECK             ==
+# ===============================================
+# 
+# ------------------1 Byte Write-----------------
+# [WRITE ] addr = 0x  1 | data = 0x5f5f
+# [READ ] read data at addr = 0x1
+# [PASS ] rdata match    | expect = 0x5f5f | recv = 0x5f5f
+# [WRITE ] addr = 0x1    | data = 0x24
+# [READ ] read data at addr = 0x1
+# [PASS ] rdata match    | expect = 0x5f5f | recv = 0x5f5f
+# 
+# ---------1 Byte Reg + 1 Byte Data Write--------
+# [WRITE ] addr = 0x  1 | data = 0x5f5f
+# [WRITE ] addr = 0x1    | data = 0x81
+# [READ ] read data at addr = 0x1
+# [PASS ] rdata match    | expect = 0x5f5f | recv = 0x5f5f
+# 
+# ------------------1 Byte Read-----------------
+# [WRITE ] addr = 0x  1 | data = 0x5f5f
+# [READ  ] addr = 0x1 
+# [READ ] read data at addr = 0x1
+# [PASS ] rdata match    | expect = 0x5f5f | recv = 0x5f5f
+# 
+# ---------1 Byte Reg + 1 Byte Data Read--------
+# [WRITE ] addr = 0x  1 | data = 0x5f5f
+# [READ  ] addr = 0x1    | data = 0x81
+# [READ ] read data at addr = 0x1
+# [PASS ] rdata match    | expect = 0x5f5f | recv = 0x5f5f
+# 
+# -------------slave addr + rw +ack loop------------
+# 
+# -------------slave addr + rw reset loop------------
+# -----------------------------------------------
+# TEST RESULT: PASSED
+# -----------------------------------------------
+# 
+# ** Note: $finish    : ../tb/tb.v(124)
+#    Time: 6500510 ns  Iteration: 0  Instance: /tb
+# Saving coverage database on exit...
+# End time: 09:29:08 on Dec 21,2025, Elapsed time: 0:00:09
+# Errors: 0, Warnings: 0

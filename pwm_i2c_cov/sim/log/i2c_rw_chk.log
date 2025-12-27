@@ -1,0 +1,1183 @@
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim -coverage -l i2c_rw_chk.log -c tb -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit ./ucdb/i2c_rw_chk.ucdb; log -r /*;run -all" 
+# Start time: 09:29:14 on Dec 21,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-220) 'modelsim.ini' is used as the ini file.
+# ** Note: (vopt-143) Recognized 1 FSM in module "i2c_slave_interface(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "i2c_frame_bridge(fast)".
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.2 win64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.tb(fast)
+# coverage save -onexit ./ucdb/i2c_rw_chk.ucdb
+#  log -r /*
+# run -all
+# run test
+# 
+# ===============================================
+# ==           I2C WRITE - READ CHECK          ==
+# ===============================================
+# ------------- write-read 16'h5f5f -------------
+# [WRITE ] addr = 0x  0 | data = 0xf
+# [READ ] read data at addr = 0x0
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x  1 | data = 0x5f5f
+# [READ ] read data at addr = 0x1
+# [PASS ] rdata match    | expect = 0x5f5f | recv = 0x5f5f
+# [WRITE ] addr = 0x  2 | data = 0x5f5f
+# [READ ] read data at addr = 0x2
+# [PASS ] rdata match    | expect = 0x5f5f | recv = 0x5f5f
+# [WRITE ] addr = 0x  3 | data = 0x5f5f
+# [READ ] read data at addr = 0x3
+# [PASS ] rdata match    | expect = 0x5f5f | recv = 0x5f5f
+# [WRITE ] addr = 0x  4 | data = 0x5f5f
+# [READ ] read data at addr = 0x4
+# [PASS ] rdata match    | expect = 0x5f5f | recv = 0x5f5f
+# [WRITE ] addr = 0x  5 | data = 0x5f5f
+# [READ ] read data at addr = 0x5
+# [PASS ] rdata match    | expect = 0x5f5f | recv = 0x5f5f
+# [WRITE ] addr = 0x  6 | data = 0x5f5f
+# [READ ] read data at addr = 0x6
+# [PASS ] rdata match    | expect = 0x5f5f | recv = 0x5f5f
+# [WRITE ] addr = 0x  7 | data = 0x5f5f
+# [READ ] read data at addr = 0x7
+# [PASS ] rdata match    | expect = 0x5f5f | recv = 0x5f5f
+# [WRITE ] addr = 0x  8 | data = 0x5f5f
+# [READ ] read data at addr = 0x8
+# [PASS ] rdata match    | expect = 0x5f5f | recv = 0x5f5f
+# [WRITE ] addr = 0x 10 | data = 0x5f5f
+# [READ ] read data at addr = 0x10
+# [PASS ] rdata match    | expect = 0x5f5f | recv = 0x5f5f
+# [WRITE ] addr = 0x 11 | data = 0x5f5f
+# [READ ] read data at addr = 0x11
+# [PASS ] rdata match    | expect = 0x5f5f | recv = 0x5f5f
+# [WRITE ] addr = 0x 12 | data = 0xf
+# [READ ] read data at addr = 0x12
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x 13 | data = 0xf
+# [READ ] read data at addr = 0x13
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x 14 | data = 0x5f5f
+# [READ ] read data at addr = 0x14
+# [PASS ] rdata match    | expect = 0x5f5f | recv = 0x5f5f
+# [WRITE ] addr = 0x 15 | data = 0x5f5f
+# [READ ] read data at addr = 0x15
+# [PASS ] rdata match    | expect = 0x5f5f | recv = 0x5f5f
+# [WRITE ] addr = 0x 16 | data = 0xf
+# [READ ] read data at addr = 0x16
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x 17 | data = 0xf
+# [READ ] read data at addr = 0x17
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x 18 | data = 0x5f5f
+# [READ ] read data at addr = 0x18
+# [PASS ] rdata match    | expect = 0x5f5f | recv = 0x5f5f
+# [WRITE ] addr = 0x 19 | data = 0x5f5f
+# [READ ] read data at addr = 0x19
+# [PASS ] rdata match    | expect = 0x5f5f | recv = 0x5f5f
+# [WRITE ] addr = 0x 20 | data = 0xf
+# [READ ] read data at addr = 0x20
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x 21 | data = 0xf
+# [READ ] read data at addr = 0x21
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x 22 | data = 0x5f5f
+# [READ ] read data at addr = 0x22
+# [PASS ] rdata match    | expect = 0x5f5f | recv = 0x5f5f
+# [WRITE ] addr = 0x 23 | data = 0x5f5f
+# [READ ] read data at addr = 0x23
+# [PASS ] rdata match    | expect = 0x5f5f | recv = 0x5f5f
+# [WRITE ] addr = 0x 24 | data = 0xf
+# [READ ] read data at addr = 0x24
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x 25 | data = 0xf
+# [READ ] read data at addr = 0x25
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x 26 | data = 0x5f5f
+# [READ ] read data at addr = 0x26
+# [PASS ] rdata match    | expect = 0x5f5f | recv = 0x5f5f
+# [WRITE ] addr = 0x 27 | data = 0x5f5f
+# [READ ] read data at addr = 0x27
+# [PASS ] rdata match    | expect = 0x5f5f | recv = 0x5f5f
+# [WRITE ] addr = 0x 28 | data = 0xf
+# [READ ] read data at addr = 0x28
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x 29 | data = 0xf
+# [READ ] read data at addr = 0x29
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x 30 | data = 0x5f5f
+# [READ ] read data at addr = 0x30
+# [PASS ] rdata match    | expect = 0x5f5f | recv = 0x5f5f
+# [WRITE ] addr = 0x 31 | data = 0x5f5f
+# [READ ] read data at addr = 0x31
+# [PASS ] rdata match    | expect = 0x5f5f | recv = 0x5f5f
+# [WRITE ] addr = 0x 32 | data = 0xf
+# [READ ] read data at addr = 0x32
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x 33 | data = 0xf
+# [READ ] read data at addr = 0x33
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x 34 | data = 0x5f5f
+# [READ ] read data at addr = 0x34
+# [PASS ] rdata match    | expect = 0x5f5f | recv = 0x5f5f
+# [WRITE ] addr = 0x 35 | data = 0x5f5f
+# [READ ] read data at addr = 0x35
+# [PASS ] rdata match    | expect = 0x5f5f | recv = 0x5f5f
+# [WRITE ] addr = 0x 36 | data = 0xf
+# [READ ] read data at addr = 0x36
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x 37 | data = 0xf
+# [READ ] read data at addr = 0x37
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x 38 | data = 0x5f5f
+# [READ ] read data at addr = 0x38
+# [PASS ] rdata match    | expect = 0x5f5f | recv = 0x5f5f
+# [WRITE ] addr = 0x 39 | data = 0x5f5f
+# [READ ] read data at addr = 0x39
+# [PASS ] rdata match    | expect = 0x5f5f | recv = 0x5f5f
+# [WRITE ] addr = 0x 40 | data = 0xf
+# [READ ] read data at addr = 0x40
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x 41 | data = 0xf
+# [READ ] read data at addr = 0x41
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x 42 | data = 0x5f5f
+# [READ ] read data at addr = 0x42
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 46 | data = 0x5f5f
+# [READ ] read data at addr = 0x46
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 50 | data = 0x5f5f
+# [READ ] read data at addr = 0x50
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 54 | data = 0x5f5f
+# [READ ] read data at addr = 0x54
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 58 | data = 0x5f5f
+# [READ ] read data at addr = 0x58
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 62 | data = 0x5f5f
+# [READ ] read data at addr = 0x62
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 66 | data = 0x5f5f
+# [READ ] read data at addr = 0x66
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 70 | data = 0x5f5f
+# [READ ] read data at addr = 0x70
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 74 | data = 0x5f5f
+# [READ ] read data at addr = 0x74
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 78 | data = 0x5f5f
+# [READ ] read data at addr = 0x78
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 82 | data = 0x5f5f
+# [READ ] read data at addr = 0x82
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 86 | data = 0x5f5f
+# [READ ] read data at addr = 0x86
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 90 | data = 0x5f5f
+# [READ ] read data at addr = 0x90
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 94 | data = 0x5f5f
+# [READ ] read data at addr = 0x94
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 98 | data = 0x5f5f
+# [READ ] read data at addr = 0x98
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x102 | data = 0x5f5f
+# [READ ] read data at addr = 0x102
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x106 | data = 0x5f5f
+# [READ ] read data at addr = 0x106
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x110 | data = 0x5f5f
+# [READ ] read data at addr = 0x110
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x114 | data = 0x5f5f
+# [READ ] read data at addr = 0x114
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x118 | data = 0x5f5f
+# [READ ] read data at addr = 0x118
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x122 | data = 0x5f5f
+# [READ ] read data at addr = 0x122
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x126 | data = 0x5f5f
+# [READ ] read data at addr = 0x126
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x130 | data = 0x5f5f
+# [READ ] read data at addr = 0x130
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x134 | data = 0x5f5f
+# [READ ] read data at addr = 0x134
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x138 | data = 0x5f5f
+# [READ ] read data at addr = 0x138
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x142 | data = 0x5f5f
+# [READ ] read data at addr = 0x142
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x146 | data = 0x5f5f
+# [READ ] read data at addr = 0x146
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x150 | data = 0x5f5f
+# [READ ] read data at addr = 0x150
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x154 | data = 0x5f5f
+# [READ ] read data at addr = 0x154
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x158 | data = 0x5f5f
+# [READ ] read data at addr = 0x158
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x162 | data = 0x5f5f
+# [READ ] read data at addr = 0x162
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x166 | data = 0x5f5f
+# [READ ] read data at addr = 0x166
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x170 | data = 0x5f5f
+# [READ ] read data at addr = 0x170
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x174 | data = 0x5f5f
+# [READ ] read data at addr = 0x174
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x178 | data = 0x5f5f
+# [READ ] read data at addr = 0x178
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x182 | data = 0x5f5f
+# [READ ] read data at addr = 0x182
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x186 | data = 0x5f5f
+# [READ ] read data at addr = 0x186
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x190 | data = 0x5f5f
+# [READ ] read data at addr = 0x190
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x194 | data = 0x5f5f
+# [READ ] read data at addr = 0x194
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x198 | data = 0x5f5f
+# [READ ] read data at addr = 0x198
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x202 | data = 0x5f5f
+# [READ ] read data at addr = 0x202
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x206 | data = 0x5f5f
+# [READ ] read data at addr = 0x206
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x210 | data = 0x5f5f
+# [READ ] read data at addr = 0x210
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x214 | data = 0x5f5f
+# [READ ] read data at addr = 0x214
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x218 | data = 0x5f5f
+# [READ ] read data at addr = 0x218
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x222 | data = 0x5f5f
+# [READ ] read data at addr = 0x222
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x226 | data = 0x5f5f
+# [READ ] read data at addr = 0x226
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x230 | data = 0x5f5f
+# [READ ] read data at addr = 0x230
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x234 | data = 0x5f5f
+# [READ ] read data at addr = 0x234
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x238 | data = 0x5f5f
+# [READ ] read data at addr = 0x238
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x242 | data = 0x5f5f
+# [READ ] read data at addr = 0x242
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x246 | data = 0x5f5f
+# [READ ] read data at addr = 0x246
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x250 | data = 0x5f5f
+# [READ ] read data at addr = 0x250
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x254 | data = 0x5f5f
+# [READ ] read data at addr = 0x254
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# ------------- write-read 16'hf5f5 -------------
+# [WRITE ] addr = 0x  0 | data = 0x5
+# [READ ] read data at addr = 0x0
+# [PASS ] rdata match    | expect = 0x5 | recv = 0x5
+# [WRITE ] addr = 0x  1 | data = 0xf5f5
+# [READ ] read data at addr = 0x1
+# [PASS ] rdata match    | expect = 0xf5f5 | recv = 0xf5f5
+# [WRITE ] addr = 0x  2 | data = 0xf5f5
+# [READ ] read data at addr = 0x2
+# [PASS ] rdata match    | expect = 0xf5f5 | recv = 0xf5f5
+# [WRITE ] addr = 0x  3 | data = 0xf5f5
+# [READ ] read data at addr = 0x3
+# [PASS ] rdata match    | expect = 0xf5f5 | recv = 0xf5f5
+# [WRITE ] addr = 0x  4 | data = 0xf5f5
+# [READ ] read data at addr = 0x4
+# [PASS ] rdata match    | expect = 0xf5f5 | recv = 0xf5f5
+# [WRITE ] addr = 0x  5 | data = 0xf5f5
+# [READ ] read data at addr = 0x5
+# [PASS ] rdata match    | expect = 0xf5f5 | recv = 0xf5f5
+# [WRITE ] addr = 0x  6 | data = 0xf5f5
+# [READ ] read data at addr = 0x6
+# [PASS ] rdata match    | expect = 0xf5f5 | recv = 0xf5f5
+# [WRITE ] addr = 0x  7 | data = 0xf5f5
+# [READ ] read data at addr = 0x7
+# [PASS ] rdata match    | expect = 0xf5f5 | recv = 0xf5f5
+# [WRITE ] addr = 0x  8 | data = 0xf5f5
+# [READ ] read data at addr = 0x8
+# [PASS ] rdata match    | expect = 0xf5f5 | recv = 0xf5f5
+# [WRITE ] addr = 0x 10 | data = 0xf5f5
+# [READ ] read data at addr = 0x10
+# [PASS ] rdata match    | expect = 0xf5f5 | recv = 0xf5f5
+# [WRITE ] addr = 0x 11 | data = 0xf5f5
+# [READ ] read data at addr = 0x11
+# [PASS ] rdata match    | expect = 0xf5f5 | recv = 0xf5f5
+# [WRITE ] addr = 0x 12 | data = 0x5
+# [READ ] read data at addr = 0x12
+# [PASS ] rdata match    | expect = 0x5 | recv = 0x5
+# [WRITE ] addr = 0x 13 | data = 0x5
+# [READ ] read data at addr = 0x13
+# [PASS ] rdata match    | expect = 0x5 | recv = 0x5
+# [WRITE ] addr = 0x 14 | data = 0xf5f5
+# [READ ] read data at addr = 0x14
+# [PASS ] rdata match    | expect = 0xf5f5 | recv = 0xf5f5
+# [WRITE ] addr = 0x 15 | data = 0xf5f5
+# [READ ] read data at addr = 0x15
+# [PASS ] rdata match    | expect = 0xf5f5 | recv = 0xf5f5
+# [WRITE ] addr = 0x 16 | data = 0x5
+# [READ ] read data at addr = 0x16
+# [PASS ] rdata match    | expect = 0x5 | recv = 0x5
+# [WRITE ] addr = 0x 17 | data = 0x5
+# [READ ] read data at addr = 0x17
+# [PASS ] rdata match    | expect = 0x5 | recv = 0x5
+# [WRITE ] addr = 0x 18 | data = 0xf5f5
+# [READ ] read data at addr = 0x18
+# [PASS ] rdata match    | expect = 0xf5f5 | recv = 0xf5f5
+# [WRITE ] addr = 0x 19 | data = 0xf5f5
+# [READ ] read data at addr = 0x19
+# [PASS ] rdata match    | expect = 0xf5f5 | recv = 0xf5f5
+# [WRITE ] addr = 0x 20 | data = 0x5
+# [READ ] read data at addr = 0x20
+# [PASS ] rdata match    | expect = 0x5 | recv = 0x5
+# [WRITE ] addr = 0x 21 | data = 0x5
+# [READ ] read data at addr = 0x21
+# [PASS ] rdata match    | expect = 0x5 | recv = 0x5
+# [WRITE ] addr = 0x 22 | data = 0xf5f5
+# [READ ] read data at addr = 0x22
+# [PASS ] rdata match    | expect = 0xf5f5 | recv = 0xf5f5
+# [WRITE ] addr = 0x 23 | data = 0xf5f5
+# [READ ] read data at addr = 0x23
+# [PASS ] rdata match    | expect = 0xf5f5 | recv = 0xf5f5
+# [WRITE ] addr = 0x 24 | data = 0x5
+# [READ ] read data at addr = 0x24
+# [PASS ] rdata match    | expect = 0x5 | recv = 0x5
+# [WRITE ] addr = 0x 25 | data = 0x5
+# [READ ] read data at addr = 0x25
+# [PASS ] rdata match    | expect = 0x5 | recv = 0x5
+# [WRITE ] addr = 0x 26 | data = 0xf5f5
+# [READ ] read data at addr = 0x26
+# [PASS ] rdata match    | expect = 0xf5f5 | recv = 0xf5f5
+# [WRITE ] addr = 0x 27 | data = 0xf5f5
+# [READ ] read data at addr = 0x27
+# [PASS ] rdata match    | expect = 0xf5f5 | recv = 0xf5f5
+# [WRITE ] addr = 0x 28 | data = 0x5
+# [READ ] read data at addr = 0x28
+# [PASS ] rdata match    | expect = 0x5 | recv = 0x5
+# [WRITE ] addr = 0x 29 | data = 0x5
+# [READ ] read data at addr = 0x29
+# [PASS ] rdata match    | expect = 0x5 | recv = 0x5
+# [WRITE ] addr = 0x 30 | data = 0xf5f5
+# [READ ] read data at addr = 0x30
+# [PASS ] rdata match    | expect = 0xf5f5 | recv = 0xf5f5
+# [WRITE ] addr = 0x 31 | data = 0xf5f5
+# [READ ] read data at addr = 0x31
+# [PASS ] rdata match    | expect = 0xf5f5 | recv = 0xf5f5
+# [WRITE ] addr = 0x 32 | data = 0x5
+# [READ ] read data at addr = 0x32
+# [PASS ] rdata match    | expect = 0x5 | recv = 0x5
+# [WRITE ] addr = 0x 33 | data = 0x5
+# [READ ] read data at addr = 0x33
+# [PASS ] rdata match    | expect = 0x5 | recv = 0x5
+# [WRITE ] addr = 0x 34 | data = 0xf5f5
+# [READ ] read data at addr = 0x34
+# [PASS ] rdata match    | expect = 0xf5f5 | recv = 0xf5f5
+# [WRITE ] addr = 0x 35 | data = 0xf5f5
+# [READ ] read data at addr = 0x35
+# [PASS ] rdata match    | expect = 0xf5f5 | recv = 0xf5f5
+# [WRITE ] addr = 0x 36 | data = 0x5
+# [READ ] read data at addr = 0x36
+# [PASS ] rdata match    | expect = 0x5 | recv = 0x5
+# [WRITE ] addr = 0x 37 | data = 0x5
+# [READ ] read data at addr = 0x37
+# [PASS ] rdata match    | expect = 0x5 | recv = 0x5
+# [WRITE ] addr = 0x 38 | data = 0xf5f5
+# [READ ] read data at addr = 0x38
+# [PASS ] rdata match    | expect = 0xf5f5 | recv = 0xf5f5
+# [WRITE ] addr = 0x 39 | data = 0xf5f5
+# [READ ] read data at addr = 0x39
+# [PASS ] rdata match    | expect = 0xf5f5 | recv = 0xf5f5
+# [WRITE ] addr = 0x 40 | data = 0x5
+# [READ ] read data at addr = 0x40
+# [PASS ] rdata match    | expect = 0x5 | recv = 0x5
+# [WRITE ] addr = 0x 41 | data = 0x5
+# [READ ] read data at addr = 0x41
+# [PASS ] rdata match    | expect = 0x5 | recv = 0x5
+# [WRITE ] addr = 0x 42 | data = 0xf5f5
+# [READ ] read data at addr = 0x42
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 46 | data = 0xf5f5
+# [READ ] read data at addr = 0x46
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 50 | data = 0xf5f5
+# [READ ] read data at addr = 0x50
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 54 | data = 0xf5f5
+# [READ ] read data at addr = 0x54
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 58 | data = 0xf5f5
+# [READ ] read data at addr = 0x58
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 62 | data = 0xf5f5
+# [READ ] read data at addr = 0x62
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 66 | data = 0xf5f5
+# [READ ] read data at addr = 0x66
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 70 | data = 0xf5f5
+# [READ ] read data at addr = 0x70
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 74 | data = 0xf5f5
+# [READ ] read data at addr = 0x74
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 78 | data = 0xf5f5
+# [READ ] read data at addr = 0x78
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 82 | data = 0xf5f5
+# [READ ] read data at addr = 0x82
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 86 | data = 0xf5f5
+# [READ ] read data at addr = 0x86
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 90 | data = 0xf5f5
+# [READ ] read data at addr = 0x90
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 94 | data = 0xf5f5
+# [READ ] read data at addr = 0x94
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 98 | data = 0xf5f5
+# [READ ] read data at addr = 0x98
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x102 | data = 0xf5f5
+# [READ ] read data at addr = 0x102
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x106 | data = 0xf5f5
+# [READ ] read data at addr = 0x106
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x110 | data = 0xf5f5
+# [READ ] read data at addr = 0x110
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x114 | data = 0xf5f5
+# [READ ] read data at addr = 0x114
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x118 | data = 0xf5f5
+# [READ ] read data at addr = 0x118
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x122 | data = 0xf5f5
+# [READ ] read data at addr = 0x122
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x126 | data = 0xf5f5
+# [READ ] read data at addr = 0x126
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x130 | data = 0xf5f5
+# [READ ] read data at addr = 0x130
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x134 | data = 0xf5f5
+# [READ ] read data at addr = 0x134
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x138 | data = 0xf5f5
+# [READ ] read data at addr = 0x138
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x142 | data = 0xf5f5
+# [READ ] read data at addr = 0x142
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x146 | data = 0xf5f5
+# [READ ] read data at addr = 0x146
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x150 | data = 0xf5f5
+# [READ ] read data at addr = 0x150
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x154 | data = 0xf5f5
+# [READ ] read data at addr = 0x154
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x158 | data = 0xf5f5
+# [READ ] read data at addr = 0x158
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x162 | data = 0xf5f5
+# [READ ] read data at addr = 0x162
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x166 | data = 0xf5f5
+# [READ ] read data at addr = 0x166
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x170 | data = 0xf5f5
+# [READ ] read data at addr = 0x170
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x174 | data = 0xf5f5
+# [READ ] read data at addr = 0x174
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x178 | data = 0xf5f5
+# [READ ] read data at addr = 0x178
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x182 | data = 0xf5f5
+# [READ ] read data at addr = 0x182
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x186 | data = 0xf5f5
+# [READ ] read data at addr = 0x186
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x190 | data = 0xf5f5
+# [READ ] read data at addr = 0x190
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x194 | data = 0xf5f5
+# [READ ] read data at addr = 0x194
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x198 | data = 0xf5f5
+# [READ ] read data at addr = 0x198
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x202 | data = 0xf5f5
+# [READ ] read data at addr = 0x202
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x206 | data = 0xf5f5
+# [READ ] read data at addr = 0x206
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x210 | data = 0xf5f5
+# [READ ] read data at addr = 0x210
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x214 | data = 0xf5f5
+# [READ ] read data at addr = 0x214
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x218 | data = 0xf5f5
+# [READ ] read data at addr = 0x218
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x222 | data = 0xf5f5
+# [READ ] read data at addr = 0x222
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x226 | data = 0xf5f5
+# [READ ] read data at addr = 0x226
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x230 | data = 0xf5f5
+# [READ ] read data at addr = 0x230
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x234 | data = 0xf5f5
+# [READ ] read data at addr = 0x234
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x238 | data = 0xf5f5
+# [READ ] read data at addr = 0x238
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x242 | data = 0xf5f5
+# [READ ] read data at addr = 0x242
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x246 | data = 0xf5f5
+# [READ ] read data at addr = 0x246
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x250 | data = 0xf5f5
+# [READ ] read data at addr = 0x250
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x254 | data = 0xf5f5
+# [READ ] read data at addr = 0x254
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# ------------- write-read 16'h0 -------------
+# [WRITE ] addr = 0x  0 | data = 0x0
+# [READ ] read data at addr = 0x0
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x  1 | data = 0x0
+# [READ ] read data at addr = 0x1
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x  2 | data = 0x0
+# [READ ] read data at addr = 0x2
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x  3 | data = 0x0
+# [READ ] read data at addr = 0x3
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x  4 | data = 0x0
+# [READ ] read data at addr = 0x4
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x  5 | data = 0x0
+# [READ ] read data at addr = 0x5
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x  6 | data = 0x0
+# [READ ] read data at addr = 0x6
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x  7 | data = 0x0
+# [READ ] read data at addr = 0x7
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x  8 | data = 0x0
+# [READ ] read data at addr = 0x8
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 10 | data = 0x0
+# [READ ] read data at addr = 0x10
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 11 | data = 0x0
+# [READ ] read data at addr = 0x11
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 12 | data = 0x0
+# [READ ] read data at addr = 0x12
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 13 | data = 0x0
+# [READ ] read data at addr = 0x13
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 14 | data = 0x0
+# [READ ] read data at addr = 0x14
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 15 | data = 0x0
+# [READ ] read data at addr = 0x15
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 16 | data = 0x0
+# [READ ] read data at addr = 0x16
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 17 | data = 0x0
+# [READ ] read data at addr = 0x17
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 18 | data = 0x0
+# [READ ] read data at addr = 0x18
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 19 | data = 0x0
+# [READ ] read data at addr = 0x19
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 20 | data = 0x0
+# [READ ] read data at addr = 0x20
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 21 | data = 0x0
+# [READ ] read data at addr = 0x21
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 22 | data = 0x0
+# [READ ] read data at addr = 0x22
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 23 | data = 0x0
+# [READ ] read data at addr = 0x23
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 24 | data = 0x0
+# [READ ] read data at addr = 0x24
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 25 | data = 0x0
+# [READ ] read data at addr = 0x25
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 26 | data = 0x0
+# [READ ] read data at addr = 0x26
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 27 | data = 0x0
+# [READ ] read data at addr = 0x27
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 28 | data = 0x0
+# [READ ] read data at addr = 0x28
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 29 | data = 0x0
+# [READ ] read data at addr = 0x29
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 30 | data = 0x0
+# [READ ] read data at addr = 0x30
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 31 | data = 0x0
+# [READ ] read data at addr = 0x31
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 32 | data = 0x0
+# [READ ] read data at addr = 0x32
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 33 | data = 0x0
+# [READ ] read data at addr = 0x33
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 34 | data = 0x0
+# [READ ] read data at addr = 0x34
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 35 | data = 0x0
+# [READ ] read data at addr = 0x35
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 36 | data = 0x0
+# [READ ] read data at addr = 0x36
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 37 | data = 0x0
+# [READ ] read data at addr = 0x37
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 38 | data = 0x0
+# [READ ] read data at addr = 0x38
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 39 | data = 0x0
+# [READ ] read data at addr = 0x39
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 40 | data = 0x0
+# [READ ] read data at addr = 0x40
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 41 | data = 0x0
+# [READ ] read data at addr = 0x41
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 42 | data = 0x0
+# [READ ] read data at addr = 0x42
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 46 | data = 0x0
+# [READ ] read data at addr = 0x46
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 50 | data = 0x0
+# [READ ] read data at addr = 0x50
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 54 | data = 0x0
+# [READ ] read data at addr = 0x54
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 58 | data = 0x0
+# [READ ] read data at addr = 0x58
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 62 | data = 0x0
+# [READ ] read data at addr = 0x62
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 66 | data = 0x0
+# [READ ] read data at addr = 0x66
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 70 | data = 0x0
+# [READ ] read data at addr = 0x70
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 74 | data = 0x0
+# [READ ] read data at addr = 0x74
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 78 | data = 0x0
+# [READ ] read data at addr = 0x78
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 82 | data = 0x0
+# [READ ] read data at addr = 0x82
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 86 | data = 0x0
+# [READ ] read data at addr = 0x86
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 90 | data = 0x0
+# [READ ] read data at addr = 0x90
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 94 | data = 0x0
+# [READ ] read data at addr = 0x94
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 98 | data = 0x0
+# [READ ] read data at addr = 0x98
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x102 | data = 0x0
+# [READ ] read data at addr = 0x102
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x106 | data = 0x0
+# [READ ] read data at addr = 0x106
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x110 | data = 0x0
+# [READ ] read data at addr = 0x110
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x114 | data = 0x0
+# [READ ] read data at addr = 0x114
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x118 | data = 0x0
+# [READ ] read data at addr = 0x118
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x122 | data = 0x0
+# [READ ] read data at addr = 0x122
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x126 | data = 0x0
+# [READ ] read data at addr = 0x126
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x130 | data = 0x0
+# [READ ] read data at addr = 0x130
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x134 | data = 0x0
+# [READ ] read data at addr = 0x134
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x138 | data = 0x0
+# [READ ] read data at addr = 0x138
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x142 | data = 0x0
+# [READ ] read data at addr = 0x142
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x146 | data = 0x0
+# [READ ] read data at addr = 0x146
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x150 | data = 0x0
+# [READ ] read data at addr = 0x150
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x154 | data = 0x0
+# [READ ] read data at addr = 0x154
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x158 | data = 0x0
+# [READ ] read data at addr = 0x158
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x162 | data = 0x0
+# [READ ] read data at addr = 0x162
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x166 | data = 0x0
+# [READ ] read data at addr = 0x166
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x170 | data = 0x0
+# [READ ] read data at addr = 0x170
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x174 | data = 0x0
+# [READ ] read data at addr = 0x174
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x178 | data = 0x0
+# [READ ] read data at addr = 0x178
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x182 | data = 0x0
+# [READ ] read data at addr = 0x182
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x186 | data = 0x0
+# [READ ] read data at addr = 0x186
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x190 | data = 0x0
+# [READ ] read data at addr = 0x190
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x194 | data = 0x0
+# [READ ] read data at addr = 0x194
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x198 | data = 0x0
+# [READ ] read data at addr = 0x198
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x202 | data = 0x0
+# [READ ] read data at addr = 0x202
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x206 | data = 0x0
+# [READ ] read data at addr = 0x206
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x210 | data = 0x0
+# [READ ] read data at addr = 0x210
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x214 | data = 0x0
+# [READ ] read data at addr = 0x214
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x218 | data = 0x0
+# [READ ] read data at addr = 0x218
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x222 | data = 0x0
+# [READ ] read data at addr = 0x222
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x226 | data = 0x0
+# [READ ] read data at addr = 0x226
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x230 | data = 0x0
+# [READ ] read data at addr = 0x230
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x234 | data = 0x0
+# [READ ] read data at addr = 0x234
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x238 | data = 0x0
+# [READ ] read data at addr = 0x238
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x242 | data = 0x0
+# [READ ] read data at addr = 0x242
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x246 | data = 0x0
+# [READ ] read data at addr = 0x246
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x250 | data = 0x0
+# [READ ] read data at addr = 0x250
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x254 | data = 0x0
+# [READ ] read data at addr = 0x254
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# ------------- write-read 16'hffff -------------
+# [WRITE ] addr = 0x  0 | data = 0xf
+# [READ ] read data at addr = 0x0
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x  1 | data = 0xffff
+# [READ ] read data at addr = 0x1
+# [PASS ] rdata match    | expect = 0xffff | recv = 0xffff
+# [WRITE ] addr = 0x  2 | data = 0xffff
+# [READ ] read data at addr = 0x2
+# [PASS ] rdata match    | expect = 0xffff | recv = 0xffff
+# [WRITE ] addr = 0x  3 | data = 0xffff
+# [READ ] read data at addr = 0x3
+# [PASS ] rdata match    | expect = 0xffff | recv = 0xffff
+# [WRITE ] addr = 0x  4 | data = 0xffff
+# [READ ] read data at addr = 0x4
+# [PASS ] rdata match    | expect = 0xffff | recv = 0xffff
+# [WRITE ] addr = 0x  5 | data = 0xffff
+# [READ ] read data at addr = 0x5
+# [PASS ] rdata match    | expect = 0xffff | recv = 0xffff
+# [WRITE ] addr = 0x  6 | data = 0xffff
+# [READ ] read data at addr = 0x6
+# [PASS ] rdata match    | expect = 0xffff | recv = 0xffff
+# [WRITE ] addr = 0x  7 | data = 0xffff
+# [READ ] read data at addr = 0x7
+# [PASS ] rdata match    | expect = 0xffff | recv = 0xffff
+# [WRITE ] addr = 0x  8 | data = 0xffff
+# [READ ] read data at addr = 0x8
+# [PASS ] rdata match    | expect = 0xffff | recv = 0xffff
+# [WRITE ] addr = 0x 10 | data = 0xffff
+# [READ ] read data at addr = 0x10
+# [PASS ] rdata match    | expect = 0xffff | recv = 0xffff
+# [WRITE ] addr = 0x 11 | data = 0xffff
+# [READ ] read data at addr = 0x11
+# [PASS ] rdata match    | expect = 0xffff | recv = 0xffff
+# [WRITE ] addr = 0x 12 | data = 0xf
+# [READ ] read data at addr = 0x12
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x 13 | data = 0xf
+# [READ ] read data at addr = 0x13
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x 14 | data = 0xffff
+# [READ ] read data at addr = 0x14
+# [PASS ] rdata match    | expect = 0xffff | recv = 0xffff
+# [WRITE ] addr = 0x 15 | data = 0xffff
+# [READ ] read data at addr = 0x15
+# [PASS ] rdata match    | expect = 0xffff | recv = 0xffff
+# [WRITE ] addr = 0x 16 | data = 0xf
+# [READ ] read data at addr = 0x16
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x 17 | data = 0xf
+# [READ ] read data at addr = 0x17
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x 18 | data = 0xffff
+# [READ ] read data at addr = 0x18
+# [PASS ] rdata match    | expect = 0xffff | recv = 0xffff
+# [WRITE ] addr = 0x 19 | data = 0xffff
+# [READ ] read data at addr = 0x19
+# [PASS ] rdata match    | expect = 0xffff | recv = 0xffff
+# [WRITE ] addr = 0x 20 | data = 0xf
+# [READ ] read data at addr = 0x20
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x 21 | data = 0xf
+# [READ ] read data at addr = 0x21
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x 22 | data = 0xffff
+# [READ ] read data at addr = 0x22
+# [PASS ] rdata match    | expect = 0xffff | recv = 0xffff
+# [WRITE ] addr = 0x 23 | data = 0xffff
+# [READ ] read data at addr = 0x23
+# [PASS ] rdata match    | expect = 0xffff | recv = 0xffff
+# [WRITE ] addr = 0x 24 | data = 0xf
+# [READ ] read data at addr = 0x24
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x 25 | data = 0xf
+# [READ ] read data at addr = 0x25
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x 26 | data = 0xffff
+# [READ ] read data at addr = 0x26
+# [PASS ] rdata match    | expect = 0xffff | recv = 0xffff
+# [WRITE ] addr = 0x 27 | data = 0xffff
+# [READ ] read data at addr = 0x27
+# [PASS ] rdata match    | expect = 0xffff | recv = 0xffff
+# [WRITE ] addr = 0x 28 | data = 0xf
+# [READ ] read data at addr = 0x28
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x 29 | data = 0xf
+# [READ ] read data at addr = 0x29
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x 30 | data = 0xffff
+# [READ ] read data at addr = 0x30
+# [PASS ] rdata match    | expect = 0xffff | recv = 0xffff
+# [WRITE ] addr = 0x 31 | data = 0xffff
+# [READ ] read data at addr = 0x31
+# [PASS ] rdata match    | expect = 0xffff | recv = 0xffff
+# [WRITE ] addr = 0x 32 | data = 0xf
+# [READ ] read data at addr = 0x32
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x 33 | data = 0xf
+# [READ ] read data at addr = 0x33
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x 34 | data = 0xffff
+# [READ ] read data at addr = 0x34
+# [PASS ] rdata match    | expect = 0xffff | recv = 0xffff
+# [WRITE ] addr = 0x 35 | data = 0xffff
+# [READ ] read data at addr = 0x35
+# [PASS ] rdata match    | expect = 0xffff | recv = 0xffff
+# [WRITE ] addr = 0x 36 | data = 0xf
+# [READ ] read data at addr = 0x36
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x 37 | data = 0xf
+# [READ ] read data at addr = 0x37
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x 38 | data = 0xffff
+# [READ ] read data at addr = 0x38
+# [PASS ] rdata match    | expect = 0xffff | recv = 0xffff
+# [WRITE ] addr = 0x 39 | data = 0xffff
+# [READ ] read data at addr = 0x39
+# [PASS ] rdata match    | expect = 0xffff | recv = 0xffff
+# [WRITE ] addr = 0x 40 | data = 0xf
+# [READ ] read data at addr = 0x40
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x 41 | data = 0xf
+# [READ ] read data at addr = 0x41
+# [PASS ] rdata match    | expect = 0xf | recv = 0xf
+# [WRITE ] addr = 0x 42 | data = 0xffff
+# [READ ] read data at addr = 0x42
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 46 | data = 0xffff
+# [READ ] read data at addr = 0x46
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 50 | data = 0xffff
+# [READ ] read data at addr = 0x50
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 54 | data = 0xffff
+# [READ ] read data at addr = 0x54
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 58 | data = 0xffff
+# [READ ] read data at addr = 0x58
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 62 | data = 0xffff
+# [READ ] read data at addr = 0x62
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 66 | data = 0xffff
+# [READ ] read data at addr = 0x66
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 70 | data = 0xffff
+# [READ ] read data at addr = 0x70
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 74 | data = 0xffff
+# [READ ] read data at addr = 0x74
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 78 | data = 0xffff
+# [READ ] read data at addr = 0x78
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 82 | data = 0xffff
+# [READ ] read data at addr = 0x82
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 86 | data = 0xffff
+# [READ ] read data at addr = 0x86
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 90 | data = 0xffff
+# [READ ] read data at addr = 0x90
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 94 | data = 0xffff
+# [READ ] read data at addr = 0x94
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x 98 | data = 0xffff
+# [READ ] read data at addr = 0x98
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x102 | data = 0xffff
+# [READ ] read data at addr = 0x102
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x106 | data = 0xffff
+# [READ ] read data at addr = 0x106
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x110 | data = 0xffff
+# [READ ] read data at addr = 0x110
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x114 | data = 0xffff
+# [READ ] read data at addr = 0x114
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x118 | data = 0xffff
+# [READ ] read data at addr = 0x118
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x122 | data = 0xffff
+# [READ ] read data at addr = 0x122
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x126 | data = 0xffff
+# [READ ] read data at addr = 0x126
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x130 | data = 0xffff
+# [READ ] read data at addr = 0x130
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x134 | data = 0xffff
+# [READ ] read data at addr = 0x134
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x138 | data = 0xffff
+# [READ ] read data at addr = 0x138
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x142 | data = 0xffff
+# [READ ] read data at addr = 0x142
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x146 | data = 0xffff
+# [READ ] read data at addr = 0x146
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x150 | data = 0xffff
+# [READ ] read data at addr = 0x150
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x154 | data = 0xffff
+# [READ ] read data at addr = 0x154
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x158 | data = 0xffff
+# [READ ] read data at addr = 0x158
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x162 | data = 0xffff
+# [READ ] read data at addr = 0x162
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x166 | data = 0xffff
+# [READ ] read data at addr = 0x166
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x170 | data = 0xffff
+# [READ ] read data at addr = 0x170
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x174 | data = 0xffff
+# [READ ] read data at addr = 0x174
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x178 | data = 0xffff
+# [READ ] read data at addr = 0x178
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x182 | data = 0xffff
+# [READ ] read data at addr = 0x182
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x186 | data = 0xffff
+# [READ ] read data at addr = 0x186
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x190 | data = 0xffff
+# [READ ] read data at addr = 0x190
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x194 | data = 0xffff
+# [READ ] read data at addr = 0x194
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x198 | data = 0xffff
+# [READ ] read data at addr = 0x198
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x202 | data = 0xffff
+# [READ ] read data at addr = 0x202
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x206 | data = 0xffff
+# [READ ] read data at addr = 0x206
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x210 | data = 0xffff
+# [READ ] read data at addr = 0x210
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x214 | data = 0xffff
+# [READ ] read data at addr = 0x214
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x218 | data = 0xffff
+# [READ ] read data at addr = 0x218
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x222 | data = 0xffff
+# [READ ] read data at addr = 0x222
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x226 | data = 0xffff
+# [READ ] read data at addr = 0x226
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x230 | data = 0xffff
+# [READ ] read data at addr = 0x230
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x234 | data = 0xffff
+# [READ ] read data at addr = 0x234
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x238 | data = 0xffff
+# [READ ] read data at addr = 0x238
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x242 | data = 0xffff
+# [READ ] read data at addr = 0x242
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x246 | data = 0xffff
+# [READ ] read data at addr = 0x246
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x250 | data = 0xffff
+# [READ ] read data at addr = 0x250
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# [WRITE ] addr = 0x254 | data = 0xffff
+# [READ ] read data at addr = 0x254
+# [PASS ] rdata match    | expect = 0x0 | recv = 0x0
+# -----------------------------------------------
+# TEST RESULT: PASSED
+# -----------------------------------------------
+# 
+# ** Note: $finish    : ../tb/tb.v(124)
+#    Time: 65360 us  Iteration: 1  Instance: /tb
+# Saving coverage database on exit...
+# End time: 09:31:26 on Dec 21,2025, Elapsed time: 0:02:12
+# Errors: 0, Warnings: 0
